@@ -1,0 +1,51 @@
+/*----------------------------------------------------------------
+Template:	JB Corporate
+Version:	Joomla 1.5 / Joomla 2.5
+Zen Grid: 	v2.0
+Hilite:		Button Mint
+Copyright:	Joomlabamboo
+Created:	April 2012
+---------------------------------------------------*/
+ 
+.zenbutton span a, 
+.zenbutton input, 
+.zenmore a>span,
+.button,
+button.zenbutton,
+button, 
+input[type="reset"], 
+input[type="button"], 
+input[type="submit"] {
+	border:1px solid #7C8A69;
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #9fb086 0%, #7c8a69 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#9fb086), color-stop(100%,#7c8a69)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#9fb086 0%,#7c8a69 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#9fb086 0%,#7c8a69 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#9fb086 0%,#7c8a69 100%); /* IE10+ */
+background: linear-gradient(top,  #1e5799 0%,#9fb086 0%,#7c8a69 100%); /* W3C */
+-pie-background: linear-gradient(#9fb086, #7c8a69); /* IE6-9 */
+}
+
+.zenbutton span a,
+.zenbutton span a.jbReadon,
+.zenmore a span,
+input.button,
+button.zenbutton span{
+	color: #566049 !important;
+}
+
+.zenbutton span a:hover, 
+.zenbutton input:hover, 
+.zenmore a>span:hover,
+.button:hover,
+button.zenbutton:hover,
+button:hover, 
+input[type="reset"]:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(0,0,0,0.2);
+	color: #444;
+}

@@ -1,0 +1,1989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="template" method="upgrade">
+	<name>JB Corporate</name>
+	<creationDate>May, 2012</creationDate>
+	<author>Anthony Olsen</author>
+	<copyright>Joomla Bamboo, 2012.</copyright>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>2.2.1</version>
+	<description>The corporate Joomla template is a flexible, responsive and clean Joomla template. It features a full width background slideshow, 26 whopping Colour schemes and a clean business minded aesthetic.</description>
+		<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+		<folder>js</folder>
+		<folder>layout</folder>
+		<folder>user</folder>
+		<filename>component.php</filename>
+		<filename>offline.php</filename>
+		<filename>params.ini</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateTeaser.jpg</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>jbcorporate_positions.png</filename>
+	</files>
+	<positions>
+		<position>panel1</position>
+		<position>panel2</position>
+		<position>panel3</position>
+		<position>panel4</position>
+		<position>banner</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>header3</position>
+		<position>header4</position>
+		<position>logo</position>
+		<position>menu</position>
+		<position>breadcrumb</position>
+		<position>background</position>
+		<position>grid1</position>
+		<position>grid2</position>
+		<position>grid3</position>
+		<position>grid4</position>
+		<position>grid5</position>
+		<position>grid6</position>
+		<position>grid7</position>
+		<position>grid8</position>
+		<position>grid9</position>
+		<position>grid10</position>
+		<position>grid11</position>
+		<position>grid12</position>
+		<position>above</position>
+		<position>left</position>
+		<position>center</position>
+		<position>advert1</position>
+		<position>advert2</position>
+		<position>advert3</position>
+		<position>advert4</position>
+		<position>advert5</position>
+		<position>advert6</position>
+		<position>right</position>
+		<position>below</position>
+		<position>grid13</position>
+		<position>grid14</position>
+		<position>grid15</position>
+		<position>grid16</position>
+		<position>grid17</position>
+		<position>grid18</position>
+		<position>grid19</position>
+		<position>grid20</position>
+		<position>grid21</position>
+		<position>grid22</position>
+		<position>grid23</position>
+		<position>grid24</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>tab1</position>
+		<position>tab2</position>
+		<position>tab3</position>
+		<position>tab4</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+	<languages>
+			<language tag="en-GB">languages/en-GB.tpl_jbcorporate.ini</language>
+		</languages>
+		<config>
+		        <fields name="params">
+		            <fieldset name="zenparams" label="TPL_ZEN_TABS" addfieldpath="/plugins/system/zengridframework/zengridframework/admin/J17">
+		                <field type="zentabs" />
+		            </fieldset>
+
+		            	<!-- 0 Overview Panel -->
+						<fieldset name="overview">
+							<field type="zeninfo" display="paneltitle" default="Template Overview"  var="paneltitle" section="overview" desc="Overview / Introduction"/>
+							<field type="zeninfo" display="zenoverview" />
+						</fieldset>
+
+							<!-- 1 Diagnostics -->
+						<fieldset name="diagnostics">
+							<field type="zeninfo" display="paneltitle"  section="overview" desc="Overview / Diagnostics"/>
+							<field type="zendiagnostics"/>
+							<field name="debug" type="radio" default="0" label="ZENDEBUG" description="ZENDEBUGDESCRIPTION">
+						           <option value="1">Yes</option>
+						           <option value="0">No</option>
+							</field>
+							<field name="legacy" type="radio" default="0" label="ZENLEGACY" description="ZENLEGACYDESCRIPTION">
+						           <option value="1">Yes</option>
+						           <option value="0">No</option>
+							</field>
+						</fieldset>
+
+						<!-- 2 Translations -->
+						<fieldset name="translation">
+							<field type="zeninfo" display="paneltitle"  section="overview" desc="Overview / Translation"/>
+							<field type="zeninfo" display="desc" desc="ZENTRANSLATIONDESCRIPTION" />
+							<field name="zenTranslate" type="list" default="1" label="ZENTRANSLATE" description="ZENTRANSLATEDESCRIPTION">
+							    <option value="1">ZENTRANSLATEOPTION1</option>
+							    <option value="0">ZENTRANSLATEOPTION2</option>
+							 </field>
+							<field type="zeninfo" display="doc" section="translation" title="Translation Documentation"/>
+						</fieldset>
+
+
+						<!-- 4 Documentation -->
+						<fieldset name="documentation">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Overview / Documentation"/>
+							<field type="zeninfo" display="doc" section="translation" title="Translation Documentation"/>
+							<field type="zeninfo" display="doc" section="rebranding" title="Rebranding Documentation" />
+							<field type="zeninfo" display="doc" section="style" title="Style Documentation" />
+							<field type="zeninfo" display="doc" section="customstyle" title="Custom Style Documentation" />
+							<field type="zeninfo" display="doc" section="logo" title="Logo Documentation" />
+							<field type="zeninfo" display="doc" section="tagline" title="Tagline Documentation" />
+							<field type="zeninfo" display="doc" section="fonts" title="Font Documentation"/>
+							<field type="zeninfo" display="doc" section="layoutsettings" title="Layout Documentation"/>
+							<field type="zeninfo" display="doc" section="mobile" title="Mobile Device Documentation"/>
+							<field type="zeninfo" display="doc" section="bodyclasses" title="Bodyclass Documentation"/>
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+							<field type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+							<field type="zeninfo" display="doc" section="overrides" title="Layout Override Documentation"/>
+							<field type="zeninfo" display="doc" section="superfish" title="Superfish Menu Documentation"/>
+							<field type="zeninfo" display="doc" section="panelmenu" title="Panel Menu Documentation"/>
+							<field type="zeninfo" display="doc" section="splitmenu" title="Split Menu Documentation"/>
+							<field type="zeninfo" display="doc" section="performance" title="Performance Documentation"/>
+							<field type="zeninfo" display="doc" section="joomlatweaks" title="Joomla Tweaks Documentation" />
+							<field type="zeninfo" display="doc" section="analytics" title="Analytics Documentation"/>
+							<field type="zeninfo" display="doc" section="extrascripts" title="Extra Scripts Documentation" />
+							<field type="zeninfo" display="doc" section="ie6fixes" title="IE6 Fixes Documentation"/>
+							<field type="zeninfo" display="doc" section="hiddenpanel" title="Hidden Panel Documentation"/>
+							<field type="zeninfo" display="doc" section="tabbedmodules" title="Tabbed Module Documentation"/>
+							<field type="zeninfo" display="doc" section="socialicons" title="Social Icon Documentation"/>
+							<field type="zeninfo" display="doc" section="slideshow" title="Slideshow Documentation"/>
+						</fieldset>
+
+
+						<!-- 5 Copyright -->
+						<fieldset name="rebranding">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Overview / Rebranding"/>
+							<field type="zeninfo" display="desc" desc="ZENTEMPLATEREBRANDINGDESCRIPTION" />
+							<field name="removejblogo" type="list" default="0" label="ZENREMOVEJBLOGO" description="ZENREMOVEJBLOGODESCRIPTION">
+									<option value="1">Yes</option>
+									<option value="0">No</option>
+								</field>
+							   <field name="customcopyright" type="textarea" filter="raw" rows="20" cols="50" default="" label="ZENCUSTOMCOPYRIGHT" description="ZENCUSTOMCOPYRIGHTDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="rebranding" title="Rebranding Documentation" />
+						</fieldset>
+
+
+						<!-- 6 Template Style -->
+						<fieldset name="style">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Appearance / Style"/>
+							<field type="zeninfo" display="desc" desc="ZENTEMPLATEHILITEDESCRIPTION" />
+							<field name="hilite" type="zenoptions" display="listcss"  default="hilite1" label="ZENTEMPLATEHILITE"  description="ZENTEMPLATEHILITEDESCRIPTION" exclude="" filter ="^hilite" stripext="true"  />
+							<field name="buttonCSS" type="zenoptions" display="listcss"  default="buttonGreen" label="ZEN_BUTTON_HILITE"  description="ZEN_BUTTON_HILITE_DESCRIPTION" exclude="" filter ="^button" stripext="true"  />
+								<field name="bgpixels" type="list" default="1" label="ZENBGPIXELS" description="ZENBGPIXELSDESCRIPTION">
+										<option value="1">Yes</option>
+										<option value="0">No</option>
+								</field>
+							<field type="zeninfo" display="overviewstyle" desc="ZENTRANSLATIONDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="style" title="Style Documentation"/>
+						</fieldset>
+
+
+						<!-- 7 Custom CSS -->
+						<fieldset name="customstyle">
+							<field type="zeninfo" display="paneltitle" section="appearance" desc="Appearance / Custom Styles"/>
+							<field type="zeninfo" display="desc" desc="ZENCSSOVERRIDESDESCRIPTION" />
+							<field name="overwriteCSS" type="list" default="0" label="ZENOVERWRITECSS" description="ZENOVERWRITECSSDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE1" />
+							<field name="firstcolorelement" type="text" default="body" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="firstcolorAtt" type="zenselector" default="color" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />			
+							<field name="firstcolor" type="red" default="" label="ZENCOLOR"  desc="firstcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE2" />
+							<field name="secondcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="secondcolorAtt" type="zenselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+							<field name="secondcolor" type="zencolor" default="" label="ZENCOLOR"  desc="secondcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE3" />
+							<field name="thirdcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="thirdcolorAtt" type="zenselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+							<field name="thirdcolor" type="zencolor" default="" label="ZENCOLOR"  desc="thirdcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE4" />
+							<field name="fourthcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="fourthcolorAtt" type="zenselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION"/>	
+							<field name="fourthcolor" type="zencolor" default="" label="ZENCOLOR" desc="fourthcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE5" />
+							<field name="fifthcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="fifthcolorAtt" type="zenselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+							<field name="fifthecolor" type="zencolor" default="" label="ZENCOLOR"  desc="fifthcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENCUSTOMSTYLE6" />
+							<field name="sixthcolourelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+							<field name="sixthcolorAtt" type="zenselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION"/>	
+							<field name="sixthcolor" type="zencolor" default="" label="ZENCOLOR"  desc="sixthcolor" description="ZENH1CSSDESCRIPTION"  />
+							<field type="zeninfo" display="heading"  desc="ZENEXTRACSS" />
+							<field name="extraCSS" type="textarea" rows="10" cols="50" default="" label="ZENEXTRACSS"  description="ZENEXTRADESCRIPTION"  />
+							<field type="zeninfo" display="doc" section="customstyle" title="Custom Style Documentation"/>
+						</fieldset>
+
+
+						<!-- 8 Logo Settings -->
+						<fieldset name="logo">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Appearance / Logo"/>
+							<field type="zeninfo" display="desc" desc="ZENLOGOSETTINGSDESCRIPTION" />
+							<field name="logoType" type="image" default="image" label="ZENLOGOTYPE" description="ZENLOGOTYPEDESCRIPTION">
+							    <option value="image">ZENLOGOTYPEOPTION1</option>
+							    <option value="text">ZENLOGOTYPEOPTION2</option>
+							</field>
+							<field name="logoWidth" type="zengridCount" default="five" label="ZENLOGOWIDTH" description="ZENLOGOWIDTHDESCRIPTION" />
+							<field name="logoLink" type="text" default="index.php" label="ZENLOGOHYPERLINK" description="ZENLOGOHYPERLINKDESCRIPTION" />
+							<field name="logoClass" type="list" default="h2" label="ZENLOGOCLASS" description="ZENLOGOCLASSDESCRIPTION">
+								<option value="h1">H1</option>
+								<option value="h2">H2</option>
+								<option value="h3">H3</option>
+								<option value="h4">H4</option>
+								<option value="h5">H5</option>
+								<option value="h6">H6</option>
+								<option value="p">p</option>
+								<option value="span">Span</option>
+							</field>
+							<field name="logoPosition" type="list" default="below" label="ZENLOGOPOSITION" description="ZENLOGOPOSITIONDESCRIPTION">
+									<option value="below">ZENLOGOBELOW</option>
+									<option value="none">ZENLOGONONE</option>
+							</field>
+							<field name="logoAlign" type="list" default="zenleft" label="ZENLOGOALIGN" description="ZENLOGOALIGNDESCRIPTION">
+									<option value="zenleft">ZENLEFT</option>
+									<option value="zencenter">ZENCENTER</option>
+									<option value="zenright">ZENRIGHT</option>
+							</field>
+							<field name="logoTop" type="text" default="0" label="ZENLOGOTOP" description="ZENLOGOTOPDESCRIPTION" />
+							<field name="logoLeft" type="text" default="0" label="ZENLOGOLEFT" description="ZENLOGOLEFTDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENLOGOASTEXT" />
+							<field type="zeninfo" display="desc" desc="ZENLOGOASTEXTDESCRIPTION" />
+							<field name="logoText" type="text" default="Corporate Lifestyle" label="ZENTEXTFORLOGO" description="ZENTEXTFORLOGODESCRIPTION" />
+							<field name="fontStackLogo" type="zenoptions"  display="fonts" default="Chivo" label="ZENLOGOFONTFAMILY" description="ZENLOGOFONTFAMILYDESCRIPTION"/>
+							<field name="logoFontSize" type="text" default="4em" label="ZENLOGOFONTSIZE" description="ZENLOGOFONTSIZEDESCRIPTION" />
+							<field name="logoColour" type="zencolor" desc="logoColour" default="" label="ZENLOGOCOLOR" description="ZENLOGOCOLORDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENLOGOASIMAGE" />
+							<field type="zeninfo" display="desc" desc="ZENLOGOASIMAGEDESCRIPTION" />
+							<field name="logoFile" type="media" hide_default="1" default="tempLogo.png" label="ZENLOGOIMAGE"  description="ZENLOGOIMAGEDESCRIPTION" exclude="" stripext="" />
+							<field name="logoAltTag" type="text" default="" label="ZENLOGOALTTEXT" description="ZENLOGOALTTEXTDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="logo" title="Logo Documentation"/>
+						</fieldset>
+
+
+
+						<!-- 9 Tagline -->
+						<fieldset name="tagline">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Appearance / Tagline"/>
+							<field type="zeninfo" display="desc" desc="ZENTAGLINESETTINGSDESCRIPTION" />
+							<field name="enableTagline" type="list" default="0" label="ZENENABLETAGLINE" description="ZENENABLETAGLINEDESCRIPTION">
+									<option value="1">Yes</option>
+									<option value="0">No</option>
+							</field>
+							<field name="tagline" type="textarea" filter="safehtml"  cols="50" rows="5" default="" label="ZENTAGLINE"  description="ZENTAGLINEDESCRIPTION"  />
+							<field name="taglineTop" type="text" default="0px" label="ZENTAGLINETOP"  description="ZENTAGLINETOPDESCRIPTION"  />
+							<field name="taglineLeft" type="text" default="0px" label="ZENTAGLINELEFT"  description="ZENTAGLINELEFTDESCRIPTION"  />
+							<field name="taglineCSS" type="textarea" cols="50" rows="5" default="" label="ZENTAGLINECSS"  description="ZENTAGLINECSSDESCRIPTION"  />
+							<field type="zeninfo" display="doc" section="tagline" title="Tagline Documentation" />
+						</fieldset>
+
+
+						<!-- 10 Font Stacks -->
+						<fieldset name="fonts">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Appearance / Fonts"/>
+							<field type="zeninfo" display="heading" desc="General Font Settings" section="topitem" />
+							<field type="zeninfo" display="desc" desc="ZENFONTSTACKDESCRIPTION" />
+							<field name="fonts" type="zenoptions" display="fontoptions" default="3" label="ZENGENERALFONTSETTINGS" description="ZENGENERALFONTSETTINGSDESCRIPTION" />
+							<field name="fontSize" type="text" default="75%" label="ZENFONTSIZE" description="ZENFONTSIZEDESCRIPTION" />
+							<field name="fontStackBody" type="zenoptions"  display="fonts" default="sans-serif" label="ZENFONTSTACKBODY" description="ZENFONTSTACKBODYDESCRIPTION"/>
+							<field name="fontStackHeading" type="zenoptions"  display="fonts"  default="------------------- Standard ---------------------" label="ZENFONTSTACKHEADINGS" description="ZENFONTSTACKHEADINGSDESCRIPTION"/>
+							<field name="fontStackNav" type="zenoptions"  display="fonts"  default="------------------- Standard ---------------------" label="ZENFONTSTACKNAV" description="ZENFONTSTACKNAV"/>
+							<field type="zeninfo" display="heading" desc="ZENFONTSTACKCUSTOM1" />
+							<field name="fontStackSelector1" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+							<field name="fontStackCustom1"  type="zenoptions" display="fonts" default="------------------- Standard ---------------------" label="ZENFONTSTACKCUSTOM1" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+							<field type="zeninfo" display="heading" desc="ZENFONTSTACKCUSTOM2" />
+							<field name="fontStackSelector2" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+							<field name="fontStackCustom2"  type="zenoptions" display="fonts" default="------------------- Standard ---------------------" label="ZENFONTSTACKCUSTOM2" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+							<field type="zeninfo" display="heading" desc="ZENFONTSTACKCUSTOM3" />
+							<field name="fontStackSelector3" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+							<field name="fontStackCustom3"  type="zenoptions" display="fonts" default="------------------- Standard ---------------------" label="ZENFONTSTACKCUSTOM3" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+							<field type="zeninfo" display="heading" desc="ZENTYPEKITDESCRIPTION" />
+							<field name="typekit" type="list" default="0" label="ZENENABLETYPEKIT" description="ZENENABLETYPEKITDESCRIPTION">
+								<option value="1">Enable</option>
+								<option value="0">Disable</option>
+							</field>
+							<field name="typekitId" type="text" default="" label="ZENTYPEKITID" description="ZENTYPEKITIDDESCRIPTION" />
+							<field type="zeninfo" display="typekit" desc="ZENTYPEKITDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="fonts" title="Font Documentation"/>
+						</fieldset>
+
+
+
+						<!-- 11 Body Class -->
+						<fieldset name="bodyclasses">
+							<field type="zeninfo" display="paneltitle"  section="appearance" desc="Appearance / Body Classes"/>
+							<field type="zeninfo" display="desc" desc="ZENBODYCLASSDESCRIPTION" />
+							<field name="bodyclassOption" type="radio" default="0" label="ZENBODYCLASSOPTION" description="ZENBODYCLASSOPTIONDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="bodyclassView" type="radio" default="1" label="ZENBODYCLASSVIEW" description="ZENBODYCLASSVIEWDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="bodyclassLayout" type="radio" default="0" label="ZENBODYCLASSLAYOUT" description="ZENBODYCLASSLAYOUTDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="bodyclassTask" type="radio" default="0" label="ZENBODYCLASSTASK" description="ZENBODYCLASSTASKDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="bodyclassItem" type="radio" default="0" label="ZENBODYCLASSITEM" description="ZENBODYCLASSITEMDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="bodyclassMainWidth" type="radio" default="0" label="ZENBODYCLASSMAINWIDTH" description="ZENBODYCLASSMAINWIDTHDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="doc" section="bodyclasses" title="Bodyclass Documentation"/>
+						</fieldset>
+
+
+						<!-- 12 General Layout -->
+						<fieldset name="settings">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Settings"/>
+							<field type="zeninfo" display="desc" desc="ZENGENERALLAYOUTSETTINGSDESCRIPTION" />
+							<field name="containerPosition" type="list" default="center" label="ZENMAINCONTAINERALIGNMENT" description="ZENMAINCONTAINERALIGNMENTDESCRIPTION">
+							    <option value="left">ZENLEFT</option>
+							    <option value="center">ZENCENTER</option>
+							    <option value="right">ZENRIGHT</option>
+							</field>
+							<field name="layoutType" type="list" default="fixed" label="ZENLAYOUTTYPE" description="ZENLAYOUTTYPEDESCRIPTION">
+								<option value="legacy">legacy</option>
+								<option value="1140">1140</option>
+								<option value="fixed">Fixed or Fluid</option>
+							</field>
+							<field name="tWidth" type="text" default="980" label="ZENTEMPLATEWIDTH" description="ZENTEMPLATEWIDTHDESCRIPTION" />
+							<field name="containerMargin" type="text" default="0" label="ZENLEFTRIGHTOFFSET" description="ZENLEFTRIGHTOFFSETDESCRIPTION" />
+							<field name="allEqual" type="list" default="0" label="ZENEQUALISEMODULES" description="ZENEQUALISEMODULESDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							
+							<field name="controlMainArea" type="list" default="1" label="ZENHIDEMAINCONTENT" description="ZENHIDEMAINCONTENTDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="heading" label="ZEN_BANNER_HEIGHT" />
+							<field type="zeninfo" display="desc" desc="ZEN_BANNERHEIGHT_DESCRIPTION" />
+							<field name="bannerHeight" type="text" default="550" label="Banner Height on Front page" description="This setting controls the height of the banner module." />
+							<field name="bannerSubHeight" type="text" default="450" label="Banner Height" description="This settign controls the height of the banner image." />
+							<field type="zeninfo" display="doc" section="layoutsettings" title="Layout Documentation"/>
+						</fieldset>
+
+
+							<!-- 13 Top Modules -->
+							<fieldset name="modulewidths">
+							<field type="zeninfo" display="paneltitle"  section="layout"  desc="Layout / Top and Header row of modules"/>
+							<field type="zeninfo" display="desc"  desc="ZENTOPROWOFMNODULESDESCRIPTION"  />
+							<field type="zeninfo" display="heading" section="topitem" desc="Top1 to Top4 row of modules" />
+							<field name="topEqual" type="list" default="0" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="top1Width" type="zenoptions" display="gridcount"  default="nine" label="ZENTOP1WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="top2Width" type="zenoptions" display="gridcount"  default="three" label="ZENTOP2WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="top3Width" type="zenoptions" display="gridcount"  default="three" label="ZENTOP3WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="top4Width" type="zenoptions" display="gridcount"  default="three" label="ZENTOP4WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="Header1 to Header4 row of modules" />					
+							<field name="headerEqual" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="header1Width" type="zenoptions" display="gridcount"  default="three" label="ZENHEADER1WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="header2Width" type="zenoptions" display="gridcount"  default="three" label="ZENHEADER2WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="header3Width" type="zenoptions" display="gridcount"  default="three" label="ZENHEADER3WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="header4Width" type="zenoptions" display="gridcount"  default="three" label="ZENHEADER4WIDTH" description="ZENWIDTHDESCRIPTION" />
+
+							<field type="zeninfo" display="heading" desc="ZENGRID1TO4" />
+							<field name="grid1Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid1Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID1WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid2Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID2WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid3Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID3WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid4Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID4WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENGRID5TO8" />
+							<field name="grid2Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid5Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID5WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid6Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID6WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid7Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID7WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid8Width" type="zenoptions" display="gridcount"  default="nine" label="ZENGRID8WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENGRID9TO12" />
+							<field name="grid3Equal" type="list" default="0" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid9Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID9WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid10Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID10WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid11Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID11WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid12Width" type="zenoptions" display="gridcount"  default="nine" label="ZENGRID12WIDTH" description="ZENWIDTHDESCRIPTION" />
+
+							<!-- Grid below main content -->
+							<field type="zeninfo" display="heading" desc="ZENGRID13TO16"  />
+							<field name="grid4Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid13Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID13WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid14Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID14WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid15Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID15WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid16Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID16WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENGRID17TO20"  />
+							<field name="grid5Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid17Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID17WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid18Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID18WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid19Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID19WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid20Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID20WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="heading" desc="ZENGRID21TO24"  />
+							<field name="grid6Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="grid21Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID21WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid22Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID22WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid23Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID23WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="grid24Width" type="zenoptions" display="gridcount"  default="three" label="ZENGRID24WIDTH" description="ZENWIDTHDESCRIPTION" />
+
+
+							<field type="zeninfo" display="heading" desc="ZENBOTTOMMOB"  />
+							<field name="bottomEqual" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+							    <option value="0">ZENINDIVIDUALMODULES</option>
+							    <option value="1">ZENEQUALISEMODULES</option>
+							</field>
+							<field name="bottom1Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM1WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="bottom2Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM2WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="bottom3Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM3WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="bottom4Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM4WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="bottom5Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM5WIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="bottom6Width" type="zenoptions" display="gridcount"  default="two" label="ZENBOTTOM6WIDTH" description="ZENWIDTHDESCRIPTION" />
+
+							<field type="zeninfo" display="heading"  desc="ZENFOOTERDESCRIPTION" />
+							<field name="footerWidth" type="zenoptions" display="gridcount"  default="eight" label="ZENFOOTERMODULEWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+						</fieldset>
+
+
+						<!-- 14 Navrow -->
+						<fieldset name="menu">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Menu Layout Options"/>
+							<field type="zeninfo" display="desc" desc="ZENNAVIGATIONSTRIPDESCRIPTION"  />
+							<field name="menuposition" type="list" default="menu" label="ZENMENUALIGNMENT" description="ZENMENUALIGNMENTDESCRIPTION">
+					            <option value="topmenu">ZENTOPMENU</option>
+					            <option value="menu">ZENMENU</option>
+							</field>
+							<field name="navposition" type="list" default="right" label="ZENMENUALIGNMENT" description="ZENMENUALIGNMENTDESCRIPTION">
+							    <option value="left">ZENMENUALIGNMENTOPTION1</option>
+							    <option value="centered">ZENNAVCENTERED</option>
+								<option value="right">ZENMENUALIGNMENTOPTION2</option>
+							</field>
+							<field name="navWidth" type="zenoptions" display="gridcount"  default="seven" label="ZENNAVIGATIONWIDTH" description="ZENWIDTHDESCRIPTION"/>
+							<field type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+						</fieldset>
+
+
+
+
+						<!-- 15 Main Layout -->
+						<fieldset name="main">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Main Content Layout Options"/>
+							<field type="zenmaincontentnav"  default="ZENMAINCONTENTCENTERMODULE" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTCENTERMODULEDESCRIPTION"  />
+							<field name="mainLayout" type="hidden" default="1" label="ZENCENTERMODULEPOSITION" description="ZENWIDTHDESCRIPTION">
+							    <option value="1">ZENBEFOREMAINCONTENT</option>
+							    <option value="2">ZENAFTERMAINCONTENT</option>
+							</field>
+							<field type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+						</fieldset>
+
+
+
+						<!-- 16 Main Content Sub navigation -->
+						<fieldset name="center">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Left and Mid Columns"/>
+							<field type="zenmaincontentnav"  default="" />
+						</fieldset>
+
+
+						<fieldset name="2colL">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Left and Mid Column"/>
+							<field type="zenmaincontentnav"  default="" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTWIDTHSDESCRIPTION"  />
+							<field name="leftCols2L" type="zenoptions" display="gridcount"  default="six" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="midCols2L" type="zenoptions" display="gridcount"  default="six" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 17  -->
+						<fieldset name="2colR">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Mid Columns and Right"/>
+							<field type="zenmaincontentnav"  default="" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTAREARIGHTDESCRIPTION"  />
+							<field name="midCols2R" type="zenoptions" display="gridcount"  default="eight" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="rightCols2R" type="zenoptions" display="gridcount"  default="four" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION"/>
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 18 -->
+						<fieldset name="3col">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Left, Mid and Right"/>
+							<field type="zenmaincontentnav"  default="" />								
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTWIDTHTHREEDESCRIPTION"  />
+							<field name="leftCols3LR" type="zenoptions" display="gridcount"  default="three" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="midCols3LR" type="zenoptions" display="gridcount"  default="six" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="rightCols3LR" type="zenoptions" display="gridcount"  default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 19 -->
+						<fieldset name="4col">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Left, Center, Middle and Right"/>
+							<field type="zenmaincontentnav"  default="" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTFOURDESCRIPTION"  />
+							<field name="leftCols4LRC" type="zenoptions" display="gridcount"  default="three" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="midCols4LRC" type="zenoptions" display="gridcount"  default="three" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="centerCols4LRC" type="zenoptions" display="gridcount"  default="three" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="rightCols4LRC" type="zenoptions" display="gridcount"  default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 20 -->
+						<fieldset name="3colLC">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Left, Center and Middle"/>
+							<field type="zenmaincontentnav"  default="" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTLCMDESCRIPTION"  />
+							<field name="leftCols3LC" type="zenoptions" display="gridcount"  default="four" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="centerCols3LC" type="zenoptions" display="gridcount"  default="four" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="midCols3LC" type="zenoptions" display="gridcount" default="four" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 21 -->
+						<fieldset name="3colRC">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Middle, Center and Right"/>
+							<field type="zenmaincontentnav"  default="" />
+							<field type="zeninfo" display="desc" desc="ZENMAINCONTENTMCRDESCRIPTION"  />
+							<field name="midCols3RC" type="zenoptions" display="gridcount"  default="six" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="centerCols3RC" type="zenoptions" display="gridcount"  default="three" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field name="rightCols3RC" type="zenoptions" display="gridcount"  default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						</fieldset>
+
+
+						<!-- 22 Layout Overrides -->
+						<fieldset name="overrides">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Layout / Layout Overrides"/>
+							<field type="zeninfo" display="desc" desc="ZENLAYOUTCHECKSDESCRIPTION" />
+							<field name="banner" type="zenoverridechecker" default="1" label="ZENBANNER" />
+							<field name="bottom" type="zenoverridechecker" default="1" label="ZENBOTTOM" />
+							<field name="closeContainer" type="zenoverridechecker" default="1" label="ZENCLOSECONTAINER" />
+							<field name="footer" type="zenoverridechecker" default="1" label="ZENFOOTER" />
+							<field name="frontpage" type="zenoverridechecker" default="1" label="ZENFRONTPAGE" />
+							<field name="grid1" type="zenoverridechecker" default="1" label="ZENGRID1" />
+							<field name="grid2" type="zenoverridechecker" default="1" label="ZENGRID2" />
+							<field name="grid3" type="zenoverridechecker" default="1" label="ZENGRID3" />
+							<field name="grid4" type="zenoverridechecker" default="1" label="ZENGRID4" />
+							<field name="grid5" type="zenoverridechecker" default="1" label="ZENGRID5" />
+							<field name="grid6" type="zenoverridechecker" default="1" label="ZENGRID6" />
+							<field name="header" type="zenoverridechecker" default="1" label="ZENHEADER" />
+							<field name="main" type="zenoverridechecker" default="1" label="ZENMAINCONTENT" />
+							<field name="nav" type="zenoverridechecker" default="1" label="ZENNAVIGATION" />
+							<field name="jbtabs" type="zenoverridechecker" default="1" label="ZENJBTABS" />
+							<field name="openContainer" type="zenoverridechecker" default="1" label="ZENOPENCONTAINER" />
+							<field name="panel" type="zenoverridechecker" default="1" label="ZENPANEL" />
+							<field name="top" type="zenoverridechecker" default="1" label="ZENTOP" />
+							<field type="zeninfo" display="doc" section="overrides" title="Layout Override Documentation"/>
+						</fieldset>
+
+
+
+						<fieldset name="superfishmenu">
+						<!-- 23 Superfish -->
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Menus / Superfish"/>
+							<field type="zeninfo" display="desc" desc="ZENSCRIPTSFORMENUSDESCRIPTION"  />
+							<field name="superfish" type="list" default="1" label="ZENENABLESUPERFISH" description="ZENENABLESUPERFISHDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="sfEffect" type="list" default="1" label="ZENSFTRANSITION" description="ZENSFTRANSITIONDESCRIPTION">
+							    <option value="1">ZENVERTICAL</option>
+							    <option value="2">ZENHORIZONTAL</option>
+							    <option value="3">ZENFADE</option>
+							    <option value="4">ZENHORANDFADE</option>
+							    <option value="5">ZENVERTANDFADE</option>
+							    <option value="6">ZENVERTHORFADE</option>
+							    <option value="7">ZENVERTHOR</option>
+							</field>
+							<field name="sfSpeed" type="list" default="normal" label="ZENSFSPEED" description="ZENSFSPEEDDESCRIPTION">
+							    <option value="fast">ZENSFFAST</option>
+							    <option value="normal">ZENSFNORMAL</option>
+							    <option value="slow">ZENSFSLOW</option>
+							</field>
+							<field name="sfhover" type="list" default="1" label="ZENSFHI" description="ZENSFHIDESCRIPTION">
+							    <option value="1">Enable</option>
+							    <option value="0">Disable</option>
+							</field>
+							<field name="sfDelay" type="text" default="800" label="ZENSFDELAY" description="ZENSFDELAYDESCRIPTION" />
+							<field name="sfMinWidth" type="text" default="14" label="ZENSFMINWIDTH" description="ZENSFMINWIDTHDESCRIPTION" />
+							<field name="sfMaxWidth" type="text" default="17" label="ZENSFMAXWIDTH" description="ZENSFMAXWIDTHDESCRIPTION" />
+							<field type="zeninfo" display="doc" section="superfish" title="Superfish Menu Documentation"/>
+						</fieldset>
+
+
+						<!-- 24 Panel Menu -->
+						<fieldset name="panelmenu">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Menus / Panel Menu"/>
+							<field type="zeninfo" display="desc" desc="ZENPANELMENUSETTINGSDESCRIPTION"  />
+								<field name="panelMenu" type="list" default="1" label="ZENENABLEPANELMENU" description="ZENENABLEPANELMENUDESCRIPTION">
+									<option value="1">Yes</option>
+									<option value="0">No</option>
+								</field>
+								<field name="panelMenuType" type="list" default="0" label="ZENENABLEPANELMENUTYPE" description="ZENENABLEPANELMENUTYPEDESCRIPTION">
+										<option value="0">ZENENABLEPANELMENUTYPEDESCRIPTION_DEFAULT</option>
+										<option value="1">ZENENABLEPANELMENUTYPEDESCRIPTION_NEW</option>
+										<option value="accordion">ZENENABLEPANELMENUTYPEDESCRIPTION_ACCORDION</option>
+								</field>
+								<field name="accordionFirst" type="list" default="0" label="ZENACCORDIONFIRST" description="ZENACCORDIONFIRSTDESCRIPTION">
+										<option value="0">No</option>
+										<option value="1">Yes</option>
+								</field>
+								<field name="accordionShowActive" type="list" default="0" label="ZENACCORDIONSHOWACTIVE" description="ZENACCORDIONSHOWACTIVEDESCRIPTION">
+										<option value="0">No</option>
+										<option value="1">Yes</option>
+								</field>
+							<field type="zeninfo" display="doc" section="panelmenu" title="Panel Menu Documentation"/>
+						</fieldset>
+
+
+						<!-- 25 Split Menu -->
+						<fieldset name="splitmenu">
+							<field type="zeninfo" display="paneltitle"  section="layout" desc="Menus / Split Menu"/>
+							<field type="zeninfo" display="desc" desc="ZENSPLITMENUDESCRIPTION"  />
+							<field name="splitMenu" type="list" default="1" label="ZENENABLESPLITMENU" description="ZENENABLESPLITMENUDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="splitMenuName" type="menu" default="mainmenu" label="ZENSPLITMENUNAME" description="ZENSELECTAMENU" />
+
+							<field type="zeninfo" display="heading" desc="ZENSPLITMENUNAV"  />
+							<field name="splitMenuNavPos" type="list" default="none" label="ZENSPLITMENUNAVPOS" description="ZENSPLITMENUNAVPOSDESCRIPTION">
+								<option value="top1">top1</option>
+								<option value="menu">menu</option>
+								<option value="none">none</option>
+							</field>
+							<field name="splitMenuNavStart" type="text" default="0" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+							<field name="splitMenuNavEnd" type="text" default="1" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+							<field type="zeninfo" display="heading" desc="ZENENABLESPLITMENUNAV"  />
+							<field name="splitMenuNav" type="list" default="0" label="ZENENABLESPLITMENUNAV" description="ZENENABLESPLITMENUSUBNAVDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="splitMenuSubNavStart" type="text" default="1" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+							<field name="splitMenuSubNavEnd" type="text" default="2" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+							<field type="zeninfo" display="heading" desc="ZENSPLITMENUABOVE"  />
+							<field name="splitMenuAbove" type="list" default="0" label="ZENENABLESPLITMENUABOVE" description="ZENENABLESPLITMENUABOVEDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="splitMenuAboveStart" type="text" default="1" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+							<field name="splitMenuAboveEnd" type="text" default="2" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+							<field type="zeninfo" display="heading" desc="ZENSPLITMENULEFT"  />
+							<field name="splitMenuLeft" type="list" default="0" label="ZENENABLESPLITMENULEFT" description="ZENENABLESPLITMENULEFTDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="splitMenuLeftTitle" type="text" default="In this section ..." label="ZENSPLITMENULEFTTITLE"  description="ZENSPLITMENUTITLEDESCRIPTION"  />
+							<field name="splitMenuLeftStart" type="text" default="1" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+							<field name="splitMenuLeftEnd" type="text" default="2" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+							<field type="zeninfo" display="heading" desc="ZENSPLITMENURIGHT"  />
+							<field name="splitMenuRight" type="list" default="1" label="ZENENABLESPLITMENURIGHT" description="ZENENABLESPLITMENURIGHTDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+							<field name="splitMenuRightTitle" type="text" default="In this section ..." label="ZENSPLITMENURIGHTTITLE"  description="ZENSPLITMENUTITLEDESCRIPTION"  />
+							<field name="splitMenuRightStart" type="text" default="1" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+							<field name="splitMenuRightEnd" type="text" default="3" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+							<field type="zeninfo" display="doc" section="splitmenu" title="Split Menu Documentation"/>
+						</fieldset>
+
+
+
+						<!-- 26 Tools -->
+						<fieldset name="performance">
+							<field type="zeninfo" display="paneltitle"  section="settings" desc="Settings / Performance"/>
+							<field type="zeninfo" display="desc" desc="ZENTEMPLATEPERFORMANCEDESCRIPTION"  />
+							<field type="zeninfo" display="heading" section="topitem" desc="ZENPERFORMANCECSS"  />
+							<field name="clearcsscache" type="zencache" section="css" default="0" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION"/>
+							<field name="csscompress" type="radio" default="0" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION">
+							    <option value="1">ZENENABLE</option>
+							    <option value="0">ZENDISABLE</option>
+							</field>
+							<field name="k2CSS" type="radio" default="0" label="ZENADDK2" description="ZENADDK2DESCRIPTION">
+							            <option value="1">Yes</option>
+							            <option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="heading" desc="ZENPERFORMANCEJS"  />
+							<field name="clearjscache" type="zencache" section="js" default="0" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION"/>
+							<field name="combinescripts" type="radio" default="0" label="ZENJSCOMPRESS" description="ZENJSCOMPRESSDESCRIPTION">
+							    <option value="1">ZENENABLE</option>
+							    <option value="0">ZENDISABLE</option>
+							</field>
+							<field name="bottomScripts" type="radio" default="0" label="ZENBOTTOMSCRIPTS" description="ZENBOTTOMSCRIPTSDESCRIPTION">
+							    <option value="1">ZENENABLE</option>
+							    <option value="0">ZENDISABLE</option>
+							</field>
+							<field name="removeMootools" type="radio" default="2" label="ZENREMOVEMOOTOOLS" description="ZENREMOVEMOOTOOLSDESCRIPTION">
+							        <option value="1">ZENYES</option>
+							        <option value="0">ZENNO</option>
+									<option value="2">ZENADDFRMEWORKJS</option>
+							    </field>
+								<field name="removeModal" type="radio" default="2" label="ZENREMOVEMODAL" description="ZENREMOVEMODALDESCRIPTION">
+							            <option value="1">ZENYES</option>
+							            <option value="0">ZENNO</option>
+										<option value="2">ZENADDFRMEWORKJS</option>
+							    </field>
+								<field name="removeK2" type="radio" default="2" label="ZENREMOVEK2" description="ZENREMOVEK2DESCRIPTION">
+								            <option value="1">ZENYES</option>
+								            <option value="0">ZENNO</option>
+											<option value="2">ZENADDFRMEWORKJS</option>
+								</field>
+								<field name="moduleslide" type="radio" default="1" label="ZENMODULESLIDE" description="ZENMODULESLIDEDESCRIPTION">
+								            <option value="1">ZENYES</option>
+								            <option value="0">ZENNO</option>
+								</field>
+
+							<field type="zeninfo" display="heading" desc="ZENJQUERYOPTIONS"  />
+							<field name="jQueryVersion" type="list" default="1.7.0" label="JQUERY_VERSION" description="JQUERY_VERSION_DESC">
+							     	<option value="google">Latest(Google Only)</option>
+									<option value="1.7.0">jQuery v1.7.x</option>
+									<option value="1.6.4">jQuery v1.6.x</option>
+									<option value="1.5.2">jQuery v1.5.x</option>
+									<option value="1.4.4">jQuery v1.4.x</option>
+						            <option value="1.3.2">jQuery v1.3.x</option>
+						            <option value="1.2.6">jQuery v1.2.x</option>
+						            <option value="none">none</option>
+							</field>
+							<field name="jQuerySource" type="list" default="local" label="JQUERY_SOURCE" description="JQUERY_SOURCE_DESC">
+							    <option value="google">Google</option>
+							    <option value="local">Local</option>
+							</field>
+							<field name="noConflict" type="list" default="1" label="JQUERY_NOCONFLICT" description="JQUERY_NOCONFLICT_DESC">
+							    <option value="1">Yes</option>
+							    <option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="heading" desc="ZENREMOVESCRIPTS"  />
+							<field name="stripCustom" type="radio" default="0" label="ZENSTRIPCUSTOM" description="ZENSTRIPCUSTOMDESCRIPTION">
+							        <option value="1">Yes</option>
+							        <option value="0">No</option>
+							 </field>
+							<field name="customScripts" type="textarea" cols="30" rows="5" default="" label="SCRIPT_NAMES" description="SCRIPT_NAMES_DESC" />
+							<!--<field name="cleanCache" type="zenclearcache" default="0" label="ZENCLEANCACHE" description="ZENCLEANCACHEDESCRIPTION" /> -->
+							<field type="zeninfo" display="doc" section="performance" title="Performance Documentation"/>
+						</fieldset>
+
+
+
+						<!-- 27 Joomla Tweaks -->
+						<fieldset name="joomlatweaks">
+							<field type="zeninfo" display="paneltitle"  section="settings" desc="Settings / Optimising Joomla"/>
+							<field type="zeninfo" display="desc" desc="ZEN_JOOMLA_TWEAKS_DESCRIPTION"  />
+							<field name="removeJgen" type="radio" default="0" label="ZENREMOVEJMETA" description="ZENREMOVEJMETADESCRIPTION">
+									<option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field name="disableTP" type="radio" default="0" label="ZENDISABLETP" description="ZENDISABLETPDESCRIPTION">
+									<option value="1">Yes</option>
+							        <option value="0">No</option>
+							</field>
+							<field type="zeninfo" display="doc" section="joomlatweaks" title="Joomla Tweaks Documentation" />
+						</fieldset>
+						
+						<!-- 28 Analytics -->
+						<fieldset name="analytics">
+						<field type="zeninfo" display="paneltitle"  section="settings" desc="Tools / Analytics"/>
+						<field type="zeninfo" display="desc" desc="ZENANALYTICSDESCRIPTION"  />
+						<field name="analyticsPosition" type="list" default="after" label="ZENANALYTICSPOSITION" description="ZENANALYTICSPOSITIONDESCRIPTION">
+							<option value="after">ZENANALYTICSBODY</option>
+							<option value="before">ZENANALYTICSHEAD</option>
+						</field>
+						<field name="analytics" type="textarea" filter="raw" rows="20" cols="50" default="" label="ZENANALYTICSCODE" description="ZENANALYTICSCODEDESCRIPTION" />
+						<field type="zeninfo" display="doc" section="analytics" title="Analytics Documentation"/>
+						</fieldset>
+
+						<!-- 29 Extra Scripts -->
+						<fieldset name="extrascripts">
+						<field type="zeninfo" display="paneltitle"  section="settings" desc="Settings / Extra Scripts"/>
+						<field type="zeninfo" display="desc" desc="ZENEXTRASCRIPTSDESCRIPTION"  />
+						<field name="extraScripts" type="textarea" filter="raw"  rows="20" cols="50" default="" desc="ZENEXTRASCRIPTSDESCRIPTION" />
+						<field type="zeninfo" display="doc" section="extrascripts" title="Extra Scripts Documentation" />
+						</fieldset>
+
+
+						<!-- 30 ie6 PNG Fix -->
+						<fieldset name="ie6fixes">
+						<field type="zeninfo" display="paneltitle"  section="settings" desc="Tools / IE6 PNG Fix"/>
+						<field type="zeninfo" display="desc" desc="ZENIE6PNGFIXDESCRIPTION"  />
+						<field name="pngfix" type="list" default="0" label="ZENENABLEPNGFIX" description="ZENENABLEPNGFIXDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="pngfixrules" type="textarea" rows="20" cols="50" default=".pathway img,#logo a img,.topInner,.jbLogo,#topShadow,.slideShowNav.indexNavButtons  a.activeSlide,#slideShowNav.indexNavButtons  a:hover,div.jbReadmore,.mbMoreFlat .readon,.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating,.k2ReadMore" label="ZENPNGFIXRULES" description="ZENPNGFIXRULESDESCRIPTION" />
+
+
+						<field type="zeninfo" display="desc" desc="ZENIE6WARNINGDESCRIPTION"  />
+						<field name="ie6Warning" type="list" default="0" label="ZENIE6WARNING" description="ZENZENIE6WARNINGDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+							<field type="zeninfo" display="heading" label="Settings / CSS3"  />
+						    <field type="zeninfo" display="desc" label="ZENCSS3DESCRIPTION"  />
+						    <field name="css3pie" type="list" default="1" label="ZENENABLECSS3PIE" description="ZENENABLECSS3PIEDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+						    <field name="css3pierules" type="textarea" rows="20" cols="50" default=".rounded, .corner, .gradient, .boxshadow,\n.zenbutton span a, .zenbutton input, .zenmore a > span, input.button, button.zenbutton, .zenbutton input, #socialicons a" label="ZENCSS3PIERULES" description="ZENCSS3PIERULESDESCRIPTION" />
+						    <field name="mediqueries" type="list" default="0" label="ZENENABLEMEDIAQUERIES" description="ZENENABLEMEDIAQUERIESDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</field>
+						<field type="zeninfo" display="doc" section="ie6fixes" title="IE6 Fixes Documentation"/>
+						</fieldset>
+
+
+						<!-- 31 Hidden Panel -->
+						<fieldset name="hiddenpanel">
+						<field type="zeninfo" display="paneltitle"  section="elements" desc="Tools / Hidden Panel"/>
+						<field type="zeninfo" display="desc" desc="ZENHIDDENPANELSETTINGSDESCRIPTION"  />
+						<field name="openPanel" type="text" default="Open" label="ZENOPENPANEL" description="ZENOPENPANELDESCRIPTION" />
+						<field name="paneltype" type="list" default="opacity" label="ZENPANELTYPE">
+						     <option value="width">ZENPANELLEFT</option>
+						     <option value="height">ZENPANELTOP</option>
+						     <option value="opacity">ZENANELOPACITY</option>
+						</field>
+						<field name="panelHeight" type="text" default="400" label="ZENPANELHEIGHT" description="ZENPANELHEIGHTDESCRIPTION" />
+						<field name="panelWidth" type="text" default="600" label="ZENPANELWIDTH" description="ZENPANELWIDTHDESCRIPTION" />
+						<field type="zeninfo" display="doc" section="hiddenpanel" title="Hidden Panel Documentation"/>
+						</fieldset>
+
+
+
+
+						<!-- 32 Tabbed Modules -->
+						<fieldset name="tabbedmodules">
+						<field type="zeninfo" display="paneltitle"  section="elements" desc="Tools / Tabbed Modules"/>
+						    <field type="zeninfo" display="desc" label="ZENTABBEDAREADESCRIPTION"  />
+						    <field name="tab1Title" type="text" default="Ideas{jb_br}{jb_span}for people{/jb_span}" label="ZENTAB1TITLE"  description="ZENTAB1TITLEDESCRIPTION"  />
+							<field name="tab1image" type="imagelist" default="lightglobe.png" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+							<field name="tab1alt" type="text" default="Tab1" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+						    <field name="tab2Title" type="text" default="Solutions{jb_br}{jb_span}for change{/jb_span}" label="ZENTAB2TITLE"  description="ZENTAB2TITLEDESCRIPTION"  />
+							<field name="tab2image" type="imagelist" default="cart.png" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						    <field name="tab2alt" type="text" default="Tab2" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+							<field name="tab3Title" type="text" default="Events{jb_br}{jb_span}and more{/jb_span}" label="ZENTAB3TITLE"  description="ZENTAB3TITLEDESCRIPTION"  />
+							<field name="tab3image" type="imagelist" default="calendar.png" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						    <field name="tab3alt" type="text" default="Tab3" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+							<field name="tab4Title" type="text" default="Statistics{jb_br}{jb_span}for real people{/jb_span}" label="ZENTAB4TITLE"  description="ZENTAB4TITLEDESCRIPTION"  />
+							<field name="tab4image" type="imagelist" default="stats.png" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+							<field name="tab4alt" type="text" default="Tab4" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+							<field type="zeninfo" display="doc" section="tabbedmodules" title="Tabbed Module Documentation"/>
+						</fieldset>
+
+
+						<!-- 33 Social Icons -->
+						<fieldset name="socialicons">
+						<field type="zeninfo" display="paneltitle"  section="elements" desc="Tools / Social Icons"/>
+						<field type="zeninfo" display="desc" desc="ZENSOCIALICONSDESCRIPTION"  />
+						<field name="socialicons" type="radio" default="1" label="ZENSOCIALICONS" description="ZENSOCIALICONSDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="socialiconstitle" type="text" default="" label="ZENSOCIALICONSTITLE" description="ZENSOCIALICONSTITLEDESCRIPTION" />
+						<field name="socialiconsposition" type="list" default="bottom" label="ZENSOCIALICONSPOSITION" description="ZENSOCIALICONSPOSITIONDESCRIPTION">
+							<option value="top">Top</option>
+							<option value="header">Header</option>
+							<option value="banner">Banner</option>
+							<option value="grid1">Grid1 to Grid4 Row</option>
+							<option value="grid6">Grid21 to Grid24 Row</option>
+							<option value="bottom">Bottom</option>
+							<option value="footer">Footer</option>
+							<option value="fixedleft">Fixed Left</option>
+							<option value="fixedright">Fixed Right</option>
+						</field>
+						<field name="socialalign" type="list" default="zenright" label="ZENSOCIALALIGN" description="ZENSOCIALALIGNDESCRIPTION">
+								<option value="zenleft">ZENLEFT</option>
+								<option value="zencenter">ZENCENTER</option>
+								<option value="zenright">ZENRIGHT</option>
+						</field>
+						<field type="zeninfo" display="heading" desc="ZENICON1" />
+						<field name="icon1Image" type="imagelist" default="twitter.png" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon1Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="heading" desc="ZENICON2" />
+						<field name="icon2Image" type="imagelist" default="dribbble.png" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon2Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="heading" desc="ZENICON3" />
+						<field name="icon3Image" type="imagelist" default="facebook.png" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon3Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="heading" desc="ZENICON4" />
+						<field name="icon4Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon4Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="heading" desc="ZENICON5" />
+						<field name="icon5Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon5Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="heading" desc="ZENICON6" />
+						<field name="icon6Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<field name="icon6Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<field type="zeninfo" display="doc" section="socialicons" title="Social Icon Documentation"/>
+						</fieldset>
+
+
+
+
+						<!-- 34 Slideshow -->
+						<fieldset name="slideshow">
+						<field type="zeninfo" display="paneltitle"  section="elements" desc="Tools / Slideshow"/>
+						<field type="zeninfo" display="desc" desc="ZENSLIDESHOWDESCRIPTION"  />
+						<field type="zeninfo" display="doc" section="slideshow" title="Slideshow Documentation"/>
+						</fieldset>
+
+
+
+						<!-- 35 Tools Effects-->
+						<fieldset name="effects">
+						<field type="zeninfo" display="paneltitle"  section="effects" desc="Tools / Effects"/>
+						<field type="zeninfo" display="desc" desc="ZENEFFECTS"  />
+						<field type="zeninfo" display="heading" class="topitem" desc="ZENSTICKYNAV"  />
+						<field type="zeninfo" display="desc" desc="ZENSTICKYNAVDESCRIPTION"  />
+						<field name="stickynav" type="list" default="0" label="ZENSTICKYNAV" description="ZENZENSTICKYNAVDESCRIPTION">
+						    <option value="1">ZENYES</option>
+						    <option value="0">ZENNO</option>
+						</field>
+						<field name="stickynavthreshold" type="text" default="200" label="ZENSTICKYNAVTHRESHOLD" description="ZENSTICKYNAVTHRESHOLDDESCRIPTION"/>
+						<field type="zeninfo" display="heading" desc="ZENLAZYLOAD"  />
+						<field type="zeninfo" display="desc" desc="ZENLAZYLOADDESCRIPTION"  />
+						<field name="lazyload" type="radio" default="0" label="ZENENABLELAZYLOAD" description="ZENLAZYLOADDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="llSelector" type="text" default="img" label="ZENLAZYLOADSELECTOR"  description="ZENLAZYLOADSELECTORDESCRIPTION"  />
+						<field type="zeninfo" display="heading" desc="ZENSCROLLTOP"  />
+						<field type="zeninfo" display="desc" desc="ZENBACKTOTOPDESCRIPTION"  />
+						<field name="scrolltop" type="radio" default="0" label="ZENBACKTOTOP" description="ZENBACKTOTOPDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="scrollText" type="text" default="Back to Top" label="ZENBACKTOTOPTEXT"  description="ZENBACKTOTOPTEXTDESCRIPTION"  />
+						<field type="zeninfo" display="doc" section="effects" title="Tools and Effects Documentation" />
+						</fieldset>
+
+						<!-- 36 Module Position Image -->
+						<fieldset name="positions">
+						<field type="zeninfo" display="paneltitle"  section="overview" desc="Overview / Module Positions"/>
+						<field type="zeninfo" display="desc" desc="ZENMODULEPOSITIONDESCRIPTION" />
+						<field type="zeninfo"  default="Module Position" display="position" />
+						</fieldset>
+					
+						<!-- 37 Mobile -->
+						<fieldset name="mobile">
+						<field type="zeninfo" display="paneltitle"  section="appearance" desc="Overview / Diagnostics"/>
+						<field type="zeninfo" display="desc" desc="ZENMOBILEDESCRIPTION"  />
+						<field name="mediaqueries" type="radio" default="1" label="ZENMEDIAQUERIES" description="ZENMEDIAQUERIESDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="mobileMeta" type="radio" default="1" label="ZENMOBILEMETA" description="ZENMOBILEMETADESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="mobilemenu" type="radio" default="2" label="ZENMOBILEMENU" description="ZENMOBILEMENUDESCRIPTION">
+							<option value="1">Select Box</option>
+							<option value="2">Toggle Menu</option>
+							<option value="0">No</option>
+						</field>	
+						<field name="mobileMenuTitle" type="text" default="Menu" label="ZENMOBILEMENUTITLE"  description="ZENMOBILEMENUTITLEDESCRIPTION"  />					
+						<field type="zeninfo" display="heading" desc="ZENMOBILEPUBLISH" />
+						<field type="zeninfo" display="desc" desc="ZENMOBILEPUBLISHDESCRIPTION" />
+						<field name="mobileDetect" type="list" default="OPT1" multiple="multiple" label="ZENMOBILETEMPLATE" description="ZENMOBILETEMPLATEDESCRIPTION">
+							<option value="iPad">iPad</option>
+							<option value="iPhone">iPhone</option>
+							<option value="android">Android</option>
+						</field>
+						<field name="topMob" type="radio" default="1" label="ZENTOPMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="headerMob" type="radio" default="1" label="ZENHEADERMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="logoMob" type="radio" default="0" label="ZENLOGOMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="navMob" type="radio" default="0" label="ZENNAVMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="bannerMob" type="radio" default="0" label="ZENBANNERMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="tabMob" type="radio" default="1" label="ZENTABMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid1Mob" type="radio" default="1" label="ZENGRID1MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid2Mob" type="radio" default="1" label="ZENGRID2MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid3Mob" type="radio" default="1" label="ZENGRID3MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid4Mob" type="radio" default="1" label="ZENGRID4MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid5Mob" type="radio" default="1" label="ZENGRID5MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="grid6Mob" type="radio" default="1" label="ZENGRID6MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field name="bottomMob" type="radio" default="1" label="ZENBOTTOMMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</field>
+						<field type="zeninfo" display="doc" section="mobile" title="Mobile Device Documentation"/>
+						</fieldset>						
+		        </fields>
+		    
+				</config>
+				<params addpath="/plugins/system/zengridframework/admin/J15/">
+				<param name="@tabs" type="zentabs" />
+				<param name="open" type="zentabopen" default="Template Display Settings"  />
+
+						<!-- 0 Overview Panel -->
+						<param type="zeninfo" display="paneltitle" default="Template Overview"  var="paneltitle" section="overview" label="Overview / Introduction"/>
+						<param type="zeninfo" display="zenoverview" />
+
+						<!-- 1 Diagnostics -->
+						<param type="zentabsplit"  section="appearance" label="Overview / Diagnostics"/>
+				        <param type="zendiagnostics"   />
+						<param name="debug" type="radio" default="1" label="ZENDEBUG" description="ZENDEBUGDESCRIPTION">
+					           <option value="1">Yes</option>
+					           <option value="0">No</option>
+						</param>
+						<param name="legacy" type="radio" default="1" label="ZENLEGACY" description="ZENLEGACYDESCRIPTION">
+					           <option value="1">Yes</option>
+					           <option value="0">No</option>
+						</param>
+
+						<!-- 2 Translations -->
+						<param type="zentabsplit"  var="paneltitle" section="overview" label="Overview / Translation"/>
+						<param  type="zeninfo" display="desc" label="ZENTRANSLATIONDESCRIPTION" />
+						<param name="zenTranslate" type="list" default="1" label="ZENTRANSLATE" description="ZENTRANSLATEDESCRIPTION">
+				            <option value="1">ZENTRANSLATEOPTION1</option>
+				            <option value="0">ZENTRANSLATEOPTION2</option>
+					     </param>
+						<param type="zeninfo" display="doc" section="translation" title="Translation Documentation"/>
+
+						<!-- 4 Documentation -->
+						<param type="zentabsplit"  var="paneltitle" section="appearance" label="Overview / Documentation"/>
+						<param  type="zeninfo" display="desc" label="ZENTEMPLATEDOCUMENTATIONDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="translation" title="Translation Documentation" extraclass="doctop"/>
+						<param type="zeninfo" display="doc" section="rebranding" title="Rebranding Documentation" />
+						<param type="zeninfo" display="doc" section="style" title="Style Documentation" />
+						<param type="zeninfo" display="doc" section="customstyle" title="Custom Style Documentation" />
+						<param type="zeninfo" display="doc" section="logo" title="Logo Documentation" />
+						<param type="zeninfo" display="doc" section="tagline" title="Tagline Documentation" />
+						<param type="zeninfo" display="doc" section="fonts" title="Font Documentation"/>
+						<param type="zeninfo" display="doc" section="layoutsettings" title="Layout Documentation"/>
+						<param type="zeninfo" display="doc" section="mobile" title="Mobile Device Documentation"/>
+						<param type="zeninfo" display="doc" section="bodyclasses" title="Bodyclass Documentation"/>
+						<param type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+						<param type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+						<param type="zeninfo" display="doc" section="overrides" title="Layout Override Documentation"/>
+						<param type="zeninfo" display="doc" section="superfish" title="Superfish Menu Documentation"/>
+						<param type="zeninfo" display="doc" section="panelmenu" title="Panel Menu Documentation"/>
+						<param type="zeninfo" display="doc" section="splitmenu" title="Split Menu Documentation"/>
+						<param type="zeninfo" display="doc" section="performance" title="Performance Documentation"/>
+						<param type="zeninfo" display="doc" section="joomlatweaks" title="Joomla Tweaks Documentation" />
+						<param type="zeninfo" display="doc" section="analytics" title="Analytics Documentation"/>
+						<param type="zeninfo" display="doc" section="extrascripts" title="Extra Scripts Documentation" />
+						<param type="zeninfo" display="doc" section="ie6fixes" title="IE6 Fixes Documentation"/>
+						<param type="zeninfo" display="doc" section="hiddenpanel" title="Hidden Panel Documentation"/>
+						<param type="zeninfo" display="doc" section="tabbedmodules" title="Tabbed Module Documentation"/>
+						<param type="zeninfo" display="doc" section="socialicons" title="Social Icon Documentation"/>
+						<param type="zeninfo" display="doc" section="slideshow" title="Slideshow Documentation"/>
+
+						<!-- 5 Copyright -->
+					 	<param type="zentabsplit"  var="paneltitle" section="appearance" label="Overview / Rebranding"/>
+						<param  type="zeninfo" display="desc" label="ZENTEMPLATEREBRANDINGDESCRIPTION" />
+				        <param name="removejblogo" type="list" default="0" label="ZENREMOVEJBLOGO" description="ZENREMOVEJBLOGODESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</param>
+					       <param name="customcopyright" type="textarea" rows="20" cols="50" default="" label="ZENCUSTOMCOPYRIGHT" description="ZENCUSTOMCOPYRIGHTDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="rebranding" title="Rebranding Documentation" />
+						
+						<!-- 6 Template Style -->
+			        	<param type="zentabsplit"  var="paneltitle" section="appearance" label="Appearance / Style"/>
+				        <param  type="zeninfo" display="desc" label="ZENTEMPLATEHILITEDESCRIPTION" />
+				        <param name="hilite" type="zenoptions" display="listcss" default="" label="ZENTEMPLATEHILITE"  description="ZENTEMPLATEHILITEDESCRIPTION" exclude="" filter ="^hilite" stripext="true"  />
+						<param name="buttonCSS" type="zenoptions" display="listcss"  default="buttonGreen" label="ZEN_BUTTON_HILITE"  description="ZEN_BUTTON_HILITE_DESCRIPTION" exclude="" filter ="^button" stripext="true"  />
+						<param name="bgpixels" type="list" default="1" label="ZENBGPIXELS" description="ZENBGPIXELSDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+						</param>
+						<param  type="zeninfo" display="overviewstyle" label="ZENTRANSLATIONDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="style" title="Style Documentation"/>
+											
+						<!-- 7 Custom CSS -->
+						<param type="zentabsplit" default="Custom CSS"  var="paneltitle" section="appearance" label="Appearance / Custom Styles"/>
+						<param  type="zeninfo" display="desc" label="ZENCSSOVERRIDESDESCRIPTION" />
+					    <param name="overwriteCSS" type="list" default="1" label="ZENOVERWRITECSS" description="ZENOVERWRITECSSDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE1" />
+					    <param name="firstcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="firstcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />			
+						<param name="firstcolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE2" />
+				        <param name="secondcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="secondcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+						<param name="secondcolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE3" />
+						<param name="thirdcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="thirdcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+						<param name="thirdcolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE4" />
+						<param name="fourthcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="fourthcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION"/>	
+						<param name="fourthcolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE5" />
+						<param name="fifthcolorelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="fifthcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION" />	
+						<param name="fifthecolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENCUSTOMSTYLE6" />
+						<param name="sixthcolourelement" type="text" default="" label="ZENCOLORSELECTOR"  description="ZENCOLORSELECTORDESCRIPTION"  />
+						<param name="sixthcolorAtt" type="zenoptions" display="attselector" default="" label="ZENCOLORRULE"  description="ZENCOLORRULEDESCRIPTION"/>	
+						<param name="sixthcolor" type="zencolor" default="" label="ZENCOLOR"  description="ZENH1CSSDESCRIPTION"  />
+						<param type="zeninfo" display="heading"  label="ZENEXTRACSS" />
+				        <param name="extraCSS" type="textarea" rows="10" cols="50" default="" label="ZENEXTRACSS"  description="ZENEXTRADESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="customstyle" title="Custom Style Documentation"/>
+								
+						<!-- 8 Logo Settings -->
+			        	<param type="zentabsplit"  var="paneltitle" section="appearance" label="Appearance / Logo"/>
+				        <param  type="zeninfo" display="desc" label="ZENLOGOSETTINGSDESCRIPTION" />
+				        <param name="logoType" type="list" default="below" label="ZENLOGOTYPE" description="ZENLOGOTYPEDESCRIPTION">
+				            <option value="image">ZENLOGOTYPEOPTION1</option>
+				            <option value="text">ZENLOGOTYPEOPTION2</option>
+						</param>
+						<param name="logoWidth" type="zenoptions" display="gridcount" default="four" label="ZENLOGOWIDTH" description="ZENLOGOWIDTHDESCRIPTION" />
+					    <param name="logoLink" type="text" default="" label="ZENLOGOHYPERLINK" description="ZENLOGOHYPERLINKDESCRIPTION" />
+				        <param name="logoClass" type="list" default="h1" label="ZENLOGOCLASS" description="ZENLOGOCLASSDESCRIPTION">
+							<option value="h1">H1</option>
+							<option value="h2">H2</option>
+							<option value="h3">H3</option>
+							<option value="h4">H4</option>
+							<option value="h5">H5</option>
+							<option value="h6">H6</option>
+							<option value="p">p</option>
+							<option value="span">Span</option>
+						</param>
+				       	<param name="logoPosition" type="list" default="below" label="ZENLOGOPOSITION" description="ZENLOGOPOSITIONDESCRIPTION">
+								<option value="below">ZENLOGOBELOW</option>
+								<option value="none">ZENLOGONONE</option>
+						</param>
+						<param name="logoAlign" type="list" default="below" label="ZENLOGOPOSITION" description="ZENLOGOPOSITIONDESCRIPTION">
+								<option value="zenleft">ZENLEFT</option>
+								<option value="zencenter">ZENCENTER</option>
+								<option value="zenright">ZENRIGHT</option>
+						</param>
+						<param name="logoTop" type="text" default="0" label="ZENLOGOTOP" description="ZENLOGOTOPDESCRIPTION" />
+						<param name="logoLeft" type="text" default="0" label="ZENLOGOLEFTOFFSET" description="ZENLOGOLEFTOFFSETDESCRIPTION" />
+				        <param type="zeninfo" display="heading" label="ZENLOGOASTEXT" />
+				        <param  type="zeninfo" display="desc" label="ZENLOGOASTEXTDESCRIPTION" />
+				        <param name="logoText" type="text" default="Your sitename here" label="ZENTEXTFORLOGO" description="ZENTEXTFORLOGODESCRIPTION" />
+				        <param name="fontStackLogo" type="zenoptions" display="fonts" default="Rochester" label="ZENLOGOFONTFAMILY" description="ZENLOGOFONTFAMILYDESCRIPTION"/>
+				        <param name="logoFontSize" type="text" default="2em" label="ZENLOGOFONTSIZE" description="ZENLOGOFONTSIZEDESCRIPTION" />
+						<param name="logoColour" type="zencolor" default="" label="ZENLOGOCOLOR" description="ZENLOGOCOLORDESCRIPTION" />
+				        <param type="zeninfo" display="heading" label="ZENLOGOASIMAGE" />
+				        <param  type="zeninfo" display="desc" label="ZENLOGOASIMAGEDESCRIPTION" />
+				        <param name="logoLocation" type="zenoptions" display="logolocation" default="/templates/jbcorporate/images/logo" label="ZENLOGOLOCATION" description="ZENLOGOLOCATIONDESCRIPTION" />
+				        <param name="logoFile" type="zenoptions" display="logofile" default="logoWhite.png" label="ZENLOGOIMAGE"  description="ZENLOGOIMAGEDESCRIPTION" exclude="" stripext="" />
+				        <param name="logoAltTag" type="text" default="" label="ZENLOGOALTTEXT" description="ZENLOGOALTTEXTDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="logo" title="Logo Documentation"/>
+									
+
+						<!-- 9 Tagline -->
+						<param type="zentabsplit"  var="paneltitle" section="appearance" label="Appearance / Tagline"/>
+				        <param  type="zeninfo" display="desc" label="ZENTAGLINESETTINGSDESCRIPTION" />
+				        <param name="enableTagline" type="list" default="0" label="ZENENABLETAGLINE" description="ZENENABLETAGLINEDESCRIPTION">
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+						</param>
+				        <param name="tagline" type="textarea" cols="50" rows="5" filter="safehtml" default="" label="ZENTAGLINE"  description="ZENTAGLINEDESCRIPTION"  />
+				        <param name="taglineTop" type="text" default="0px" label="ZENTAGLINETOP"  description="ZENTAGLINETOPDESCRIPTION"  />
+				        <param name="taglineLeft" type="text" default="0px" label="ZENTAGLINELEFT"  description="ZENTAGLINELEFTDESCRIPTION"  />
+						<param name="taglineCSS" type="textarea" cols="50" rows="5" default="" label="ZENTAGLINECSS"  description="ZENTAGLINECSSDESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="tagline" title="Tagline Documentation" />
+					
+						<!-- 10 Font Stacks -->
+				        <param type="zentabsplit"  var="paneltitle" section="appearance" label="Appearance / Fonts"/>
+				        <param  type="zeninfo" display="heading" label="General Font Settings" section="top" />
+						<param  type="zeninfo" display="desc" label="ZENFONTSTACKDESCRIPTION" />
+				        <param name="fonts" type="zenoptions" display="fontoptions" default="3" label="ZENGENERALFONTSETTINGS" description="ZENGENERALFONTSETTINGSDESCRIPTION" />
+						<param name="fontSize" type="text" default="75%" label="ZENFONTSIZE" description="ZENFONTSIZEDESCRIPTION" />
+				        <param name="fontStackBody" type="zenoptions" display="fonts" default="sans-serif" label="ZENFONTSTACKBODY" description="ZENFONTSTACKBODYDESCRIPTION"/>
+				        <param name="fontStackHeading" type="zenoptions" display="fonts" default="default" label="ZENFONTSTACKHEADINGS" description="ZENFONTSTACKHEADINGSDESCRIPTION"/>
+				        <param name="fontStackNav" type="zenoptions" display="fonts" default="helvetica" label="ZENFONTSTACKNAV" description="ZENFONTSTACKNAV"/>
+				        <param  type="zeninfo" display="heading" label="ZENFONTSTACKCUSTOM1" />
+						<param name="fontStackSelector1" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+						<param name="fontStackCustom1" type="zenoptions" display="fonts" default="helvetica" label="ZENFONTSTACKCUSTOM1" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+						<param  type="zeninfo" display="heading" label="ZENFONTSTACKCUSTOM2" />
+						<param name="fontStackSelector2" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+						<param name="fontStackCustom2" type="zenoptions" display="fonts" default="helvetica" label="ZENFONTSTACKCUSTOM2" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+						<param  type="zeninfo" display="heading" label="ZENFONTSTACKCUSTOM3" />
+						<param name="fontStackSelector3" type="text" default="" label="ZENFONTSTACKSELECTOR" description="ZENFONTSTACKSELECTORDESCRIPTION"/>
+						<param name="fontStackCustom3" type="zenoptions" display="fonts" default="helvetica" label="ZENFONTSTACKCUSTOM3" description="ZENFONTSTACKCUSTOMDESCRIPTION"/>
+					    <param  type="zeninfo" display="heading" label="ZENTYPEKITDESCRIPTION" />
+						<param name="typekit" type="list" default="1" label="ZENENABLETYPEKIT" description="ZENENABLETYPEKITDESCRIPTION">
+							<option value="1">Enable</option>
+							<option value="0">Disable</option>
+						</param>
+				        <param name="typekitId" type="text" default="" label="ZENTYPEKITID" description="ZENTYPEKITIDDESCRIPTION" />
+						<param  type="zeninfo" display="typekit" label="ZENTYPEKITDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="Fonts" title="Font Documentation"/>
+														
+
+						<!-- 11 Body Class -->
+						<param type="zentabsplit"  var="paneltitle" section="appearance" label="Appearance / Body Classes"/>
+				        <param  type="zeninfo" display="desc" label="ZENBODYCLASSDESCRIPTION" />
+						<param name="bodyclassOption" type="radio" default="1" label="ZENBODYCLASSOPTION" description="ZENBODYCLASSOPTIONDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+					  	<param name="bodyclassView" type="radio" default="1" label="ZENBODYCLASSVIEW" description="ZENBODYCLASSVIEWDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+						<param name="bodyclassLayout" type="radio" default="1" label="ZENBODYCLASSLAYOUT" description="ZENBODYCLASSLAYOUTDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+						<param name="bodyclassTask" type="radio" default="1" label="ZENBODYCLASSTASK" description="ZENBODYCLASSTASKDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+						<param name="bodyclassItem" type="radio" default="1" label="ZENBODYCLASSITEM" description="ZENBODYCLASSITEMDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+						<param name="bodyclassMainWidth" type="radio" default="1" label="ZENBODYCLASSMAINWIDTH" description="ZENBODYCLASSMAINWIDTHDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					    </param>
+						<param type="zeninfo" display="doc" section="bodyclasses" title="Bodyclass Documentation"/>
+
+						<!-- 12 General Layout -->
+						<param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Settings"/>
+				        <param  type="zeninfo" display="desc" label="ZENGENERALLAYOUTSETTINGSDESCRIPTION" />
+				        <param name="containerPosition" type="list" default="center" label="ZENMAINCONTAINERALIGNMENT" description="ZENMAINCONTAINERALIGNMENTDESCRIPTION">
+				            <option value="left">ZENLEFT</option>
+				            <option value="center">ZENCENTER</option>
+				            <option value="right">ZENRIGHT</option>
+				        </param>
+						<param name="layoutType" type="list" default="12" label="ZENLAYOUTTYPE" description="ZENLAYOUTTYPEDESCRIPTION">
+							<option value="legacy">legacy</option>
+							<option value="1140">1140</option>
+							<option value="fixed">Fixed or Fluid</option>
+						</param>
+				        <param name="tWidth" type="text" default="980" label="ZENTEMPLATEWIDTH" description="ZENTEMPLATEWIDTHDESCRIPTION" />
+						<param name="containerMargin" type="text" default="0" label="ZENLEFTRIGHTOFFSET" description="ZENLEFTRIGHTOFFSETDESCRIPTION" />
+				        <param name="allEqual" type="list" default="0" label="ZENEQUALISEMODULES" description="ZENEQUALISEMODULESDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+				        
+				        <param name="controlMainArea" type="list" default="1" label="ZENHIDEMAINCONTENT" description="ZENHIDEMAINCONTENTDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param type="zeninfo" display="heading" label="ZEN_BANNER_HEIGHT" />
+						<param type="zeninfo" display="desc" desc="ZEN_BANNER_HEIGHT_DESCRIPTION" />
+						<param name="bannerHeight" type="text" default="550px" label="Banner Height on Front page" description="This setting controls the height of the banner module." />
+						<param name="bannerSubHeight" type="text" default="450px" label="Banner Height" description="This settign controls the height of the banner image." />
+						<param type="zeninfo" display="doc" section="layoutsettings" title="Layout Documentation"/>
+				
+						<!-- 13 Top Modules -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Top and Header row of modules"/>
+				        <param  type="zeninfo" display="desc" label="ZENTOPROWOFMNODULESDESCRIPTION"  />
+						<param type="zeninfo" display="heading" label="Top1 to Top4 row of modules" />
+				        <param name="topEqual" type="list" default="0" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="top1Width" type="zenoptions" display="gridcount" default="three" label="ZENTOP1WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="top2Width" type="zenoptions" display="gridcount" default="three" label="ZENTOP2WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="top3Width" type="zenoptions" display="gridcount" default="three" label="ZENTOP3WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="top4Width" type="zenoptions" display="gridcount" default="three" label="ZENTOP4WIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="Header1 to Header4 row of modules" />					
+				        <param name="headerEqual" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="header1Width" type="zenoptions" display="gridcount" default="three" label="ZENHEADER1WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="header2Width" type="zenoptions" display="gridcount" default="three" label="ZENHEADER2WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="header3Width" type="zenoptions" display="gridcount" default="three" label="ZENHEADER3WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="header4Width" type="zenoptions" display="gridcount" default="three" label="ZENHEADER4WIDTH" description="ZENWIDTHDESCRIPTION" />
+				
+				        <param  type="zeninfo" display="heading" label="ZENGRID1TO4" />
+				        <param name="grid1Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid1Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID1WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid2Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID2WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid3Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID3WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid4Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID4WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param  type="zeninfo" display="heading" label="ZENGRID5TO8" />
+				        <param name="grid2Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid5Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID5WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid6Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID6WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid7Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID7WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid8Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID8WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param  type="zeninfo" display="heading" label="ZENGRID9TO12" />
+				        <param name="grid3Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid9Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID9WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid10Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID10WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid11Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID11WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid12Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID12WIDTH" description="ZENWIDTHDESCRIPTION" />
+						
+						<!-- Grid below main content -->
+				        <param  type="zeninfo" display="heading" label="ZENGRID13TO16"  />
+				        <param name="grid4Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid13Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID13WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid14Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID14WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid15Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID15WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid16Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID16WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param  type="zeninfo" display="heading" label="ZENGRID17TO20"  />
+				        <param name="grid5Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid17Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID17WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid18Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID18WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid19Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID19WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid20Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID20WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param  type="zeninfo" display="heading" label="ZENGRID21TO24"  />
+				        <param name="grid6Equal" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="grid21Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID21WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid22Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID22WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid23Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID23WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="grid24Width" type="zenoptions" display="gridcount" default="three" label="ZENGRID24WIDTH" description="ZENWIDTHDESCRIPTION" />
+	
+			
+				        <param  type="zeninfo" display="heading" label="ZENBOTTOMMOB"  />
+				        <param name="bottomEqual" type="list" default="1" label="ZENMODULEWIDTHS" description="ZENMODULEWIDTHSDESCRIPTION">
+				            <option value="0">ZENINDIVIDUALMODULES</option>
+				            <option value="1">ZENEQUALISEMODULES</option>
+				        </param>
+				        <param name="bottom1Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM1WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="bottom2Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM2WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="bottom3Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM3WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="bottom4Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM4WIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="bottom5Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM5WIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param name="bottom6Width" type="zenoptions" display="gridcount" default="two" label="ZENBOTTOM6WIDTH" description="ZENWIDTHDESCRIPTION" />
+
+						<param type="zeninfo" display="heading"  label="ZENFOOTERDESCRIPTION" />
+					    <param name="footerWidth" type="zenoptions" display="gridcount" default="eight" label="ZENFOOTERMODULEWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+
+						<!-- 14 Navrow -->
+						 <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Menu Layout Options"/>
+				        <param  type="zeninfo" display="desc" label="ZENNAVIGATIONSTRIPDESCRIPTION"  />
+						<param name="menuposition" type="list" default="menu" label="ZENMENUALIGNMENT" description="ZENMENUALIGNMENTDESCRIPTION">
+				            <option value="topmenu">ZENTOPMENU</option>
+				            <option value="menu">ZENMENU</option>
+						</param>
+				        <param name="navposition" type="list" default="below" label="ZENMENUALIGNMENT" description="ZENMENUALIGNMENTDESCRIPTION">
+				            <option value="left">ZENMENUALIGNMENTOPTION1</option>
+				            <option value="centered">ZENNAVCENTERED</option>
+							<option value="right">ZENMENUALIGNMENTOPTION2</option>
+						</param>
+				        <param name="navWidth" type="zenoptions" display="gridcount" default="twelve" label="ZENNAVIGATIONWIDTH" description="ZENWIDTHDESCRIPTION"/>
+						<param type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+						
+				        
+									
+						<!-- 15 Main Layout -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Main Content Layout Options"/>
+				        <param type="zenmaincontentnav"  default="ZENMAINCONTENTCENTERMODULE" />
+				        <param type="zeninfo" display="desc" label="ZENMAINCONTENTCENTERMODULEDESCRIPTION"  />
+				        <param name="mainLayout" type="hidden" default="two" label="ZENCENTERMODULEPOSITION" description="ZENWIDTHDESCRIPTION">
+				            <option value="1">ZENBEFOREMAINCONTENT</option>
+				            <option value="2">ZENAFTERMAINCONTENT</option>
+						</param>
+						<param type="zeninfo" display="doc" section="modulewidths" title="Module Width Documentation" />
+				
+							
+						<!-- 16 Main Content Sub navigation -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Left and Mid Columns"/>
+				        <param type="zenmaincontentnav"  default="" />
+
+				        <param type="zeninfo" display="desc" label="ZENMAINCONTENTWIDTHSDESCRIPTION"  />
+						<param name="leftCols2L" type="zenoptions" display="gridcount" default="three" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="midCols2L" type="zenoptions" display="gridcount" default="nine" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="main" title="Main Content Area Documentation" />
+
+						<!-- 17  -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Mid Columns and Right"/>
+				        <param type="zenmaincontentnav"  default="" />
+				        <param  type="zeninfo" display="desc" label="ZENMAINCONTENTAREARIGHTDESCRIPTION"  />
+				        <param name="midCols2R" type="zenoptions" display="gridcount" default="nine" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="rightCols2R" type="zenoptions" display="gridcount" default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION"/>
+						<param type="zeninfo" display="heading" section="doc" label="Related Knowledgebase articles" />
+						<param type="zeninfo" display="doc" section="main" />
+
+						<!-- 18 -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Left, Mid and Right"/>
+				        <param type="zenmaincontentnav"  default="" />								
+				        <param  type="zeninfo" display="desc" label="ZENMAINCONTENTWIDTHTHREEDESCRIPTION"  />
+				        <param name="leftCols3LR" type="zenoptions" display="gridcount" default="four" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="midCols3LR" type="zenoptions" display="gridcount" default="four" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="rightCols3LR" type="zenoptions" display="gridcount" default="four" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="heading" section="doc" label="Related Knowledgebase articles" />
+						<param type="zeninfo" display="doc" section="main" />
+
+						<!-- 19 -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Left, Center, Middle and Right"/>
+				        <param type="zenmaincontentnav"  default="" />
+				        <param  type="zeninfo" display="desc" label="ZENMAINCONTENTFOURDESCRIPTION"  />
+				        <param name="leftCols4LRC" type="zenoptions" display="gridcount" default="three" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="midCols4LRC" type="zenoptions" display="gridcount" default="three" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="centerCols4LRC" type="zenoptions" display="gridcount" default="three" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="rightCols4LRC" type="zenoptions" display="gridcount" default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="main" />
+
+						<!-- 20 -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Left, Center and Middle"/>
+				        <param type="zenmaincontentnav"  default="" />
+				        <param  type="zeninfo" display="desc" label="ZENMAINCONTENTLCMDESCRIPTION"  />
+				        <param name="leftCols3LC" type="zenoptions" display="gridcount" default="three" label="ZENLEFTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="centerCols3LC" type="zenoptions" display="gridcount" default="three" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="midCols3LC" type="zenoptions" display="gridcount" default="six" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="main" />
+
+						<!-- 21 -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Middle, Center and Right"/>
+				        <param type="zenmaincontentnav"  default="" />
+				        <param  type="zeninfo" display="desc" label="ZENMAINCONTENTMCRDESCRIPTION"  />
+				        <param name="midCols3RC" type="zenoptions" display="gridcount" default="six" label="ZENMAINCONTENTWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="centerCols3RC" type="zenoptions" display="gridcount" default="three" label="ZENCENTERCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+				        <param name="rightCols3RC" type="zenoptions" display="gridcount" default="three" label="ZENRIGHTCOLWIDTH" description="ZENWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="main" />
+
+						<!-- 22 Layout Overrides -->
+						<param type="zentabsplit"  var="paneltitle" section="layout" label="Layout / Layout Overrides"/>
+					    <param type="zeninfo" display="desc" label="ZENLAYOUTCHECKSDESCRIPTION" />
+				        <param name="banner" type="zenoverridechecker" default="1" label="ZENBANNER" />
+				        <param name="bottom" type="zenoverridechecker" default="1" label="ZENBOTTOM" />
+				        <param name="closeContainer" type="zenoverridechecker" default="1" label="ZENCLOSECONTAINER" />
+				        <param name="footer" type="zenoverridechecker" default="1" label="ZENFOOTER" />
+				        <param name="frontpage" type="zenoverridechecker" default="1" label="ZENFRONTPAGE" />
+				        <param name="grid1" type="zenoverridechecker" default="1" label="ZENGRID1" />
+				        <param name="grid2" type="zenoverridechecker" default="1" label="ZENGRID2" />
+				        <param name="grid3" type="zenoverridechecker" default="1" label="ZENGRID3" />
+				        <param name="grid4" type="zenoverridechecker" default="1" label="ZENGRID4" />
+				        <param name="grid5" type="zenoverridechecker" default="1" label="ZENGRID5" />
+				        <param name="grid6" type="zenoverridechecker" default="1" label="ZENGRID6" />
+				        <param name="header" type="zenoverridechecker" default="1" label="ZENHEADER" />
+				        <param name="main" type="zenoverridechecker" default="1" label="ZENMAINCONTENT" />
+				        <param name="nav" type="zenoverridechecker" default="1" label="ZENNAVIGATION" />
+						<param name="jbtabs" type="zenoverridechecker" default="1" label="ZENJBTABS" />
+				        <param name="openContainer" type="zenoverridechecker" default="1" label="ZENOPENCONTAINER" />
+				        <param name="panel" type="zenoverridechecker" default="1" label="ZENPANEL" />
+				        <param name="top" type="zenoverridechecker" default="1" label="ZENTOP" />
+						<param type="zeninfo" display="doc" section="overrides" title="Layout Override Documentation"/>
+						
+
+					<!-- 23 Superfish -->
+				        <param type="zentabsplit"  var="paneltitle" section="layout" label="Menus / Superfish"/>
+				        <param  type="zeninfo" display="desc" label="ZENSCRIPTSFORMENUSDESCRIPTION"  />
+				        <param name="superfish" type="list" default="yes" label="ZENENABLESUPERFISH" description="ZENENABLESUPERFISHDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+				        <param name="sfEffect" type="list" default="yes" label="ZENSFTRANSITION" description="ZENSFTRANSITIONDESCRIPTION">
+				            <option value="1">ZENVERTICAL</option>
+				            <option value="2">ZENHORIZONTAL</option>
+				            <option value="3">ZENFADE</option>
+				            <option value="4">ZENHORANDFADE</option>
+				            <option value="5">ZENVERTANDFADE</option>
+				            <option value="6">ZENVERTHORFADE</option>
+				            <option value="7">ZENVERTHOR</option>
+				        </param>
+				        <param name="sfSpeed" type="list" default="normal" label="ZENSFSPEED" description="ZENSFSPEEDDESCRIPTION">
+				            <option value="fast">ZENSFFAST</option>
+				            <option value="normal">ZENSFNORMAL</option>
+				            <option value="slow">ZENSFSLOW</option>
+				        </param>
+				        <param name="sfhover" type="list" default="yes" label="ZENSFHI" description="ZENSFHIDESCRIPTION">
+				            <option value="1">Enable</option>
+				            <option value="0">Disable</option>
+				        </param>
+				        <param name="sfDelay" type="text" default="800" label="ZENSFDELAY" description="ZENSFDELAYDESCRIPTION" />
+				        <param name="sfMinWidth" type="text" default="27" label="ZENSFMINWIDTH" description="ZENSFMINWIDTHDESCRIPTION" />
+				        <param name="sfMaxWidth" type="text" default="40" label="ZENSFMAXWIDTH" description="ZENSFMAXWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="superfish" title="Superfish Menu Documentation"/>
+					
+						<!-- 24 Panel Menu -->
+						 <param type="zentabsplit"  var="paneltitle" section="layout" label="Menus / Panel Menu"/>
+				        <param  type="zeninfo" display="desc" label="ZENPANELMENUSETTINGSDESCRIPTION"  />
+				       	<param name="panelMenu" type="list" default="yes" label="ZENENABLEPANELMENU" description="ZENENABLEPANELMENUDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+							<param name="panelMenuType" type="list" default="yes" label="ZENENABLEPANELMENUTYPE" description="ZENENABLEPANELMENUTYPEDESCRIPTION">
+									<option value="0">ZENENABLEPANELMENUTYPEDESCRIPTION_DEFAULT</option>
+									<option value="1">ZENENABLEPANELMENUTYPEDESCRIPTION_NEW</option>
+									<option value="accordion">ZENENABLEPANELMENUTYPEDESCRIPTION_ACCORDION</option>
+							</param>
+							<param name="accordionFirst" type="list" default="yes" label="ZENACCORDIONFIRST" description="ZENACCORDIONFIRSTDESCRIPTION">
+									<option value="0">No</option>
+									<option value="1">Yes</option>
+							</param>
+							<param name="accordionShowActive" type="list" default="yes" label="ZENACCORDIONSHOWACTIVE" description="ZENACCORDIONSHOWACTIVEDESCRIPTION">
+									<option value="0">No</option>
+									<option value="1">Yes</option>
+							</param>
+						<param type="zeninfo" display="doc" section="panelmenu" title="Panel Menu Documentation"/>
+						
+						<!-- 25 Split Menu -->
+						<param type="zentabsplit"  var="paneltitle" section="layout" label="Menus / Split Menu"/>
+						<param  type="zeninfo" display="desc" label="ZENSPLITMENUDESCRIPTION"  />
+						<param name="splitMenu" type="list" default="0" label="ZENENABLESPLITMENU" description="ZENENABLESPLITMENUDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="splitMenuName" type="menu" default="mainmenu" label="ZENSPLITMENUNAME" description="ZENSELECTAMENU" />
+
+						<param  type="zeninfo" display="heading" label="ZENSPLITMENUNAV"  />
+						<param name="splitMenuNavPos" type="list" default="top1" label="ZENSPLITMENUNAVPOS" description="ZENSPLITMENUNAVPOSDESCRIPTION">
+							<option value="top1">top1</option>
+							<option value="menu">menu</option>
+							<option value="none">none</option>
+						</param>
+						<param name="splitMenuNavStart" type="text" default="0" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+						<param name="splitMenuNavEnd" type="text" default="1" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+						<param  type="zeninfo" display="heading" label="ZENENABLESPLITMENUNAV"  />
+						<param name="splitMenuNav" type="list" default="0" label="ZENENABLESPLITMENUNAV" description="ZENENABLESPLITMENUSUBNAVDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="splitMenuSubNavStart" type="text" default="0" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+						<param name="splitMenuSubNavEnd" type="text" default="1" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+						<param  type="zeninfo" display="heading" label="ZENSPLITMENUABOVE"  />
+						<param name="splitMenuAbove" type="list" default="0" label="ZENENABLESPLITMENUABOVE" description="ZENENABLESPLITMENUABOVEDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="splitMenuAboveStart" type="text" default="0" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+						<param name="splitMenuAboveEnd" type="text" default="1" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+						<param  type="zeninfo" display="heading" label="ZENSPLITMENULEFT"  />
+						<param name="splitMenuLeft" type="list" default="0" label="ZENENABLESPLITMENULEFT" description="ZENENABLESPLITMENULEFTDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="splitMenuLeftTitle" type="text" default="In this section ..." label="ZENSPLITMENULEFTTITLE"  description="ZENSPLITMENUTITLEDESCRIPTION"  />
+						<param name="splitMenuLeftStart" type="text" default="1" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+						<param name="splitMenuLeftEnd" type="text" default="2" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+
+						<param  type="zeninfo" display="heading" label="ZENSPLITMENURIGHT"  />
+						<param name="splitMenuRight" type="list" default="0" label="ZENENABLESPLITMENURIGHT" description="ZENENABLESPLITMENURIGHTDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="splitMenuRightTitle" type="text" default="In this section ..." label="ZENSPLITMENURIGHTTITLE"  description="ZENSPLITMENUTITLEDESCRIPTION"  />
+						<param name="splitMenuRightStart" type="text" default="2" label="ZENSPLITMENUSTART"  description="ZENSPLITMENUSTARTDESCRIPTION"  />
+						<param name="splitMenuRightEnd" type="text" default="3" label="ZENSPLITMENUEND"  description="ZENSPLITMENUENDDESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="splitmenu" title="Split Menu Documentation"/>
+
+
+						<!-- 26 Tools -->
+						<param type="zentabsplit"  var="paneltitle" section="settings" label="Settings / Performance"/>
+				        <param  type="zeninfo" display="desc" label="ZENTEMPLATEPERFORMANCEDESCRIPTION"  />
+						<param  type="zeninfo" display="heading" section="topitem" label="ZENPERFORMANCECSS"  />
+						<param name="clearcsscache" type="zencache" section="css" default="0" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION"/>
+				        <param name="csscompress" type="radio"  default="1" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION">
+				            <option value="1">ZENENABLE</option>
+				            <option value="0">ZENDISABLE</option>
+				        </param>
+						<param name="k2CSS" type="radio" default="0" label="ZENADDK2" description="ZENADDK2DESCRIPTION">
+						            <option value="1">Yes</option>
+						            <option value="0">No</option>
+						</param>
+						<param  type="zeninfo" display="heading" label="ZENPERFORMANCEJS"  />
+						<param name="clearjscache" type="zencache" section="js" default="0" label="ZENCSSCOMPRESS" description="ZENCSSCOMPRESSDESCRIPTION"/>
+				        <param name="combinescripts" type="radio" default="1" label="ZENJSCOMPRESS" description="ZENJSCOMPRESSDESCRIPTION">
+				            <option value="1">ZENENABLE</option>
+				            <option value="0">ZENDISABLE</option>
+						</param>
+						<param name="bottomScripts" type="radio" default="1" label="ZENBOTTOMSCRIPTS" description="ZENBOTTOMSCRIPTSDESCRIPTION">
+				            <option value="1">ZENENABLE</option>
+				            <option value="0">ZENDISABLE</option>
+						</param>
+						<param name="removeMootools" type="radio" default="0" label="ZENREMOVEMOOTOOLS" description="ZENREMOVEMOOTOOLSDESCRIPTION">
+					            <option value="1">ZENYES</option>
+					            <option value="0">ZENNO</option>
+								<option value="2">ZENADDFRMEWORKJS</option>
+					        </param>
+							<param name="removeModal" type="radio" default="0" label="ZENREMOVEMODAL" description="ZENREMOVEMODALDESCRIPTION">
+						            <option value="1">ZENYES</option>
+						            <option value="0">ZENNO</option>
+									<option value="2">ZENADDFRMEWORKJS</option>
+						    </param>
+							<param name="removeK2" type="radio" default="0" label="ZENREMOVEK2" description="ZENREMOVEK2DESCRIPTION">
+							            <option value="1">ZENYES</option>
+							            <option value="0">ZENNO</option>
+										<option value="2">ZENADDFRMEWORKJS</option>
+							</param>
+							<param name="moduleslide" type="radio" default="0" label="ZENMODULESLIDE" description="ZENMODULESLIDEDESCRIPTION">
+							            <option value="1">ZENYES</option>
+							            <option value="0">ZENNO</option>
+							</param>
+						
+						<param  type="zeninfo" display="heading" label="ZENJQUERYOPTIONS"  />
+						<param name="jQueryVersion" type="list" default="1.6" label="JQUERY_VERSION" description="JQUERY_VERSION_DESC">
+				            <option value="google">Latest(Google Only)</option>
+							<option value="1.7.0">jQuery v1.7.x</option>
+							<option value="1.6.4">jQuery v1.6.x</option>
+							<option value="1.5.2">jQuery v1.5.x</option>
+							<option value="1.4.4">jQuery v1.4.x</option>
+				            <option value="1.3.2">jQuery v1.3.x</option>
+				            <option value="1.2.6">jQuery v1.2.x</option>
+				            <option value="none">none</option>
+				        </param>
+						<param name="jQuerySource" type="list" default="local" label="JQUERY_SOURCE" description="JQUERY_SOURCE_DESC">
+				            <option value="google">Google</option>
+				            <option value="local">Local</option>
+				        </param>
+						<param name="noConflict" type="list" default="1" label="JQUERY_NOCONFLICT" description="JQUERY_NOCONFLICT_DESC">
+				            <option value="1">Yes</option>
+				            <option value="0">No</option>
+				        </param>
+						<param  type="zeninfo" display="heading" label="ZENREMOVESCRIPTS"  />
+						<param name="stripCustom" type="radio" default="0" label="ZENSTRIPCUSTOM" description="ZENSTRIPCUSTOMDESCRIPTION">
+					            <option value="1">Yes</option>
+					            <option value="0">No</option>
+					     </param>
+						<param name="customScripts" type="textarea" cols="30" rows="5" default="" label="SCRIPT_NAMES" description="SCRIPT_NAMES_DESC" />
+						<!--<param name="cleanCache" type="zenclearcache" default="0" label="ZENCLEANCACHE" description="ZENCLEANCACHEDESCRIPTION" /> -->
+						<param type="zeninfo" display="doc" section="performance" title="Performance Documentation"/>
+						
+						
+						<!-- 27 Joomla Tweaks -->
+						<param type="zentabsplit"  var="paneltitle" section="settings" label="Settings / Optimising Joomla"/>
+					    <param  type="zeninfo" display="desc" label="ZEN_JOOMLA_TWEAKS_DESCRIPTION"  />
+				        <param name="removeJgen" type="radio" default="0" label="ZENREMOVEJMETA" description="ZENREMOVEJMETADESCRIPTION">
+								<option value="1">Yes</option>
+					            <option value="0">No</option>
+						</param>
+					    <param name="disableTP" type="radio" default="0" label="ZENDISABLETP" description="ZENDISABLETPDESCRIPTION">
+								<option value="1">Yes</option>
+					            <option value="0">No</option>
+						</param>
+						<param type="zeninfo" display="doc" section="joomlatweaks" title="Joomla Tweaks Documentation" />
+
+						<!-- 28 Analytics -->
+						<param type="zentabsplit"  var="paneltitle" section="settings" label="Settings / Analytics"/>
+				        <param  type="zeninfo" display="desc" label="ZENANALYTICSDESCRIPTION"  />
+						<param name="analyticsPosition" type="list" default="after" label="ZENANALYTICSPOSITION" description="ZENANALYTICSPOSITIONDESCRIPTION">
+							<option value="after">ZENANALYTICSBODY</option>
+							<option value="before">ZENANALYTICSHEAD</option>
+						</param>
+				        <param name="analytics" type="textarea" rows="20" cols="50" default="" label="ZENANALYTICSCODE" description="ZENANALYTICSCODEDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="analytics" title="Analytics Documentation"/>
+
+						<!-- 29 Extra Scripts -->
+						<param type="zentabsplit"  var="paneltitle" section="settings" label="Settings / Extra Scripts"/>
+					    <param  type="zeninfo" display="desc" label="ZENEXTRASCRIPTSDESCRIPTION"  />
+					    <param name="extraScripts" type="textarea" rows="20" cols="50" default="" label="ZENEXTRASCRIPTSDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="extrascripts" title="Extra Scripts Documentation" />
+
+						<!-- 30 ie6 PNG Fix -->
+						<param type="zentabsplit"  var="paneltitle" section="settings" label="Settings / IE6 PNG Fix"/>
+					    <param  type="zeninfo" display="desc" label="ZENIE6PNGFIXDESCRIPTION"  />
+					    <param name="pngfix" type="list" default="0" label="ZENENABLEPNGFIX" description="ZENENABLEPNGFIXDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+					    <param name="pngfixrules" type="textarea" rows="20" cols="50" default=".pathway img,#logo a img,.topInner,.jbLogo,#topShadow,.slideShowNav.indexNavButtons  a.activeSlide,#slideShowNav.indexNavButtons  a:hover,div.jbReadmore,.mbMoreFlat .readon,.itemRatingList,.itemRatingList a:hover,.itemRatingList .itemCurrentRating,.k2ReadMore" label="ZENPNGFIXRULES" description="ZENPNGFIXRULESDESCRIPTION" />
+
+				        <param  type="zeninfo" display="desc" label="ZENIE6WARNINGDESCRIPTION"  />
+						<param name="ie6Warning" type="list" default="0" label="ZENIE6WARNING" description="ZENZENIE6WARNINGDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param  type="zeninfo" display="heading" label="Settings / CSS3"  />
+					    <param  type="zeninfo" display="desc" label="ZENCSS3DESCRIPTION"  />
+					    <param name="css3pie" type="list" default="0" label="ZENENABLECSS3PIE" description="ZENENABLECSS3PIEDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+					    <param name="css3pierules" type="textarea" rows="20" cols="50" default=".rounded, .corner, .gradient, .boxshadow" label="ZENCSS3PIERULES" description="ZENCSS3PIERULESDESCRIPTION" />
+					    <param name="mediqueries" type="list" default="0" label="ZENENABLEMEDIAQUERIES" description="ZENENABLEMEDIAQUERIESDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param type="zeninfo" display="doc" section="ie6fixes" title="IE6 Fixes Documentation"/>
+												
+						
+						<!-- 31 Hidden Panel -->
+						<param type="zentabsplit"  var="paneltitle" section="elements" label="Tools / Hidden Panel"/>
+					    <param type="zeninfo" display="desc" label="ZENHIDDENPANELSETTINGSDESCRIPTION"  />
+					    <param name="openPanel" type="text" default="Open Panel" label="ZENOPENPANEL" description="ZENOPENPANELDESCRIPTION" />
+					    <param name="paneltype" type="list" default="opacity" label="ZENPANELTYPE">
+					         <option value="width">ZENPANELLEFT</option>
+					         <option value="height">ZENPANELTOP</option>
+					         <option value="opacity">ZENANELOPACITY</option>
+						</param>
+					    <param name="panelHeight" type="text" default="200" label="ZENPANELHEIGHT" description="ZENPANELHEIGHTDESCRIPTION" />
+					    <param name="panelWidth" type="text" default="300" label="ZENPANELWIDTH" description="ZENPANELWIDTHDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="hiddenpanel" title="Hidden Panel Documentation"/>
+				
+						
+
+						<!-- 32 Tabbed Modules -->
+						<param type="zentabsplit"  var="paneltitle" section="elements" label="Tools / Tabbed Modules"/>
+					    <param  type="zeninfo" display="desc" label="ZENTABBEDAREADESCRIPTION"  />
+					    <param name="tab1Title" type="text" default="Tab1" label="ZENTAB1TITLE"  description="ZENTAB1TITLEDESCRIPTION"  />
+						<param name="tab1image" type="imagelist" default="-1" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="tab1alt" type="text" default="Tab1" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+					    <param name="tab2Title" type="text" default="Tab2" label="ZENTAB2TITLE"  description="ZENTAB2TITLEDESCRIPTION"  />
+						<param name="tab2image" type="imagelist" default="-1" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+					    <param name="tab2alt" type="text" default="Tab1" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+						<param name="tab3Title" type="text" default="Tab3" label="ZENTAB3TITLE"  description="ZENTAB3TITLEDESCRIPTION"  />
+						<param name="tab3image" type="imagelist" default="-1" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+					    <param name="tab3alt" type="text" default="Tab1" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+						<param name="tab4Title" type="text" default="Tab4" label="ZENTAB4TITLE"  description="ZENTAB4TITLEDESCRIPTION"  />
+						<param name="tab4image" type="imagelist" default="-1" label="ZENTABICON" description="ZENTABICONDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="tab4alt" type="text" default="Tab1" label="ZEN_TAB1_ALT"  description="ZEN_TAB1_ALT_DESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="tabbedmodules" title="Tabbed Module Documentation"/>
+						
+						<!-- 33 Social Icons -->
+						<param type="zentabsplit"  var="paneltitle" section="elements" label="Tools / Social Icons"/>
+					    <param  type="zeninfo" display="desc" label="ZENSOCIALICONSDESCRIPTION"  />
+						<param name="socialicons" type="radio" default="1" label="ZENSOCIALICONS" description="ZENSOCIALICONSDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="socialiconstitle" type="text" default="" label="ZENSOCIALICONSTITLE" description="ZENSOCIALICONSTITLEDESCRIPTION" />
+						<param name="socialiconsposition" type="list" default="1" label="ZENSOCIALICONSPOSITION" description="ZENSOCIALICONSPOSITIONDESCRIPTION">
+							<option value="top">Top</option>
+							<option value="header">Header</option>
+							<option value="banner">Banner</option>
+							<option value="grid1">Grid1 to Grid4 Row</option>
+							<option value="grid6">Grid21 to Grid24 Row</option>
+							<option value="bottom">Bottom</option>
+							<option value="footer">Footer</option>
+						</param>
+						<param name="socialalign" type="list" default="below" label="ZENSOCIALALIGN" description="ZENSOCIALALIGNDESCRIPTION">
+								<option value="zenleft">ZENLEFT</option>
+								<option value="zencenter">ZENCENTER</option>
+								<option value="zenright">ZENRIGHT</option>
+						</param>
+						<param type="zeninfo" display="heading" label="ZENICON1" />
+						<param name="icon1Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon1Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="ZENICON2" />
+						<param name="icon2Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon2Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="ZENICON3" />
+						<param name="icon3Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon3Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="ZENICON4" />
+						<param name="icon4Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon4Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="ZENICON5" />
+						<param name="icon5Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon5Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="heading" label="ZENICON6" />
+						<param name="icon6Image" type="imagelist" default="-1" label="ZENICONIMAGE" description="ZENICONIMAGEDESCRIPTION" directory="templates/jbcorporate/images/icons/" exclude="" stripext="" />
+						<param name="icon6Link" type="text" default="#" label="ZENSOCIALICONLINK" description="ZENSOCIALICONLINKDESCRIPTION" />
+						<param type="zeninfo" display="doc" section="socialicons" title="Social Icon Documentation"/>
+					
+					
+						
+						<!-- 34 Slideshow -->
+						<param type="zentabsplit"  var="paneltitle" section="elements" label="Tools / Slideshow"/>
+					    <param  type="zeninfo" display="desc" label="ZENSLIDESHOWDESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="slideshow" title="Slideshow Documentation"/>
+					
+						
+						<!-- 35 Lazy Load -->
+						<param type="zentabsplit"  var="paneltitle" section="elements" label="Tools / Effects"/>
+						<param  type="zeninfo" display="desc" label="ZENEFFECTS"  />
+						<param  type="zeninfo" display="heading" class="topitem" label="ZENSTICKYNAV"  />
+						<param  type="zeninfo" display="desc" label="ZENSTICKYNAVDESCRIPTION"  />
+						<param name="stickynav" type="list" default="below" label="ZENSTICKYNAV" description="ZENZENSTICKYNAVDESCRIPTION">
+						    <option value="1">ZENYES</option>
+						    <option value="0">ZENNO</option>
+						</param>
+						<param name="stickynavthreshold" type="text" default="200" label="ZENSTICKYNAVTHRESHOLD" description="ZENSTICKYNAVTHRESHOLDDESCRIPTION"/>
+						<param  type="zeninfo" display="heading" label="ZENLAZYLOAD"  />
+						<param  type="zeninfo" display="desc" label="ZENLAZYLOADDESCRIPTION"  />
+						<param name="lazyload" type="radio" default="1" label="ZENENABLELAZYLOAD" description="ZENLAZYLOADDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="llSelector" type="text" default="img" label="ZENLAZYLOADSELECTOR"  description="ZENLAZYLOADSELECTORDESCRIPTION"  />
+						<param  type="zeninfo" display="heading" label="ZENSCROLLTOP"  />
+						<param  type="zeninfo" display="desc" label="ZENBACKTOTOPDESCRIPTION"  />
+						<param name="scrolltop" type="radio" default="0" label="ZENBACKTOTOP" description="ZENBACKTOTOPDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="scrollText" type="text" default="Back to Top" label="ZENBACKTOTOPTEXT"  description="ZENBACKTOTOPTEXTDESCRIPTION"  />
+						<param type="zeninfo" display="doc" section="effects" />
+								
+						<!-- 36 Module Position Image -->
+						<param type="zentabsplit"  var="paneltitle" section="overview" label="Overview / Module Positions"/>
+						<param  type="zeninfo" display="desc" label="ZENMODULEPOSITIONDESCRIPTION" />
+						<param type="zeninfo"  default="Module Position" display="position" />
+								
+						<!-- 37 Mobile -->
+						<param type="zentabsplit"  var="paneltitle" section="appearance" label="Overview / Mobile"/>
+						<param  type="zeninfo" display="desc" label="ZENMOBILEDESCRIPTION"  />
+						<param name="mediaqueries" type="radio" default="0" label="ZENMEDIAQUERIES" description="ZENMEDIAQUERIESDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="mobileMeta" type="radio" default="0" label="ZENMOBILEMETA" description="ZENMOBILEMETADESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="mobilemenu" type="radio" default="0" label="ZENMOBILEMENU" description="ZENMOBILEMENUDESCRIPTION">
+							<option value="1">Select Box</option>
+							<option value="2">Toggle Menu</option>
+							<option value="0">No</option>
+						</param>	
+						<param name="mobileMenuTitle" type="text" default="Menu" label="ZENMOBILEMENUTITLE"  description="ZENMOBILEMENUTITLEDESCRIPTION"  />					
+						<param type="zeninfo" display="heading" label="ZENMOBILEPUBLISH" />
+				        <param  type="zeninfo" display="desc" label="ZENMOBILEPUBLISHDESCRIPTION" />
+						<param name="mobileDetect" type="multilist" default="OPT1" multiple="multiple" label="ZENMOBILETEMPLATE" description="ZENMOBILETEMPLATEDESCRIPTION">
+							<option value="iPad">iPad</option>
+							<option value="iPhone">iPhone</option>
+							<option value="android">Android</option>
+						</param>
+						<param name="topMob" type="radio" default="0" label="ZENTOPMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="headerMob" type="radio" default="0" label="ZENHEADERMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="logoMob" type="radio" default="0" label="ZENLOGOMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="navMob" type="radio" default="0" label="ZENNAVMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="bannerMob" type="radio" default="0" label="ZENBANNERMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="tabMob" type="radio" default="0" label="ZENTABMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid1Mob" type="radio" default="0" label="ZENGRID1MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid2Mob" type="radio" default="0" label="ZENGRID2MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid3Mob" type="radio" default="0" label="ZENGRID3MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid4Mob" type="radio" default="0" label="ZENGRID4MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid5Mob" type="radio" default="0" label="ZENGRID5MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="grid6Mob" type="radio" default="0" label="ZENGRID6MOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param name="bottomMob" type="radio" default="0" label="ZENBOTTOMMOB" description="ZENMOBILEROWDESCRIPTION">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</param>
+						<param type="zeninfo" display="doc" section="mobile" title="Mobile Device Documentation"/>
+
+				<param type="zentabclose" name="closer" label="close" />
+				<param type="zenFooter"   />
+	</params>
+</install>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication">
+	<name>PLG_AUTHENTICATION_MYMART3</name>
+	<author>Paul Candido</author>
+	<creationDate>March 2012</creationDate>
+	<authorEmail>paul@fairpoint.com.au</authorEmail>
+	<authorUrl>www.mymart3.com.au</authorUrl>
+	<copyright>Copyright (C) 2012 Fairpoint Pty Ltd. All rights reserved.</copyright>
+	<license></license>
+	<version>0.0.1</version>
+	<description>Checks user credentials in myMART3</description>
+	<files>
+		<filename plugin="mymart3">mymart3.php</filename>
+		<filename>AlliancePortalClientProxy.class.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_authentication_mymart3.ini</language>
+		<language tag="en-GB">en-GB.plg_authentication_mymart3.sys.ini</language>
+	</languages>
+</extension>

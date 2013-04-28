@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">        
+<name>System - JB Type </name>
+<creationDate>Feb 2010</creationDate>
+<version>1.5.10</version>
+<author>Joomla Bamboo</author>
+<copyright>Copyright 2009 - joomlabamboo.com</copyright>
+<license>http://www.gnu.org/copyleft/lgpl.html</license>
+<authorEmail>design@joomlabamboo.com</authorEmail>
+<authorUrl>www.joomlabamboo.com.com</authorUrl>
+<description><![CDATA[<p style="line-height:180%;font-size:1.2em"><a href="http://www.joomlabamboo.com/joomla-extensions/jb-type-joomla-typography-plugin"><img src="http://d129tlhqmunv45.cloudfront.net/images/stories/blog/icons/JBtype.png?1305337042" alt="JB Type" style="float:left;margin:0 20px 20px 0px"/></a>JB Type is a Joomla style and typography plugin for your content. By using some simple Joomla syntax you can create some awesome typography for your site without knowing any html at all.</p>]]></description>
+<files>
+	<filename plugin="jbtype">jbtype.php</filename>
+	<filename plugin="jbtype">jbtype/styles.php</filename>
+	<filename plugin="jbtype">jbtype/index.html</filename>
+	</files>
+	<media destination="jbtype" folder="media/jbtype">
+	    <folder>images</folder>
+		<file>index.html</file>
+	  </media>
+<config>
+    <fields name="params" addfieldpath="/plugins/system/jblibrary/fields">
+        <fieldset name="jbtype" group="jbtype" label="JB Type Options">
+        		<field name="iconStyle" type="list" default="coquette" label="Select the style of icons" description="Select from the available styles.">
+	      			<option value="coquette">Coquette - dryicons.com</option>
+	      			<option value="orangesticker">Orange Sticker Icons</option>
+	    		</field>
+        </fieldset>
+    </fields>
+</config>  
+<params>
+	<param name="iconStyle" type="list" default="coquette" label="Select the style of icons" description="Select from the available styles.">
+      <option value="coquette">Coquette - dryicons.com</option>
+      <option value="orangesticker">Orange Sticker Icons</option>
+    </param>
+</params>		
+ 	
+</install>

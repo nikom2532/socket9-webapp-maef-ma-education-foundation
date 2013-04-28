@@ -1,0 +1,50 @@
+/*----------------------------------------------------------------
+Template:  JB Corporate
+Version:  Joomla 1.5 / Joomla 2.5
+Zen Grid:   v2.0
+Hilite:    Button Green
+Copyright:  Joomlabamboo
+Created:  April 2012
+---------------------------------------------------*/
+
+.zenbutton span a,
+.zenbutton input,
+.zenmore a>span,
+.button,
+button.zenbutton,
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  border-color: #93af58 !important;
+  background-color: #cae286 !important;
+  background-image: -moz-linear-gradient(top, #cae286, #9eca56) !important;
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#cae286), to(#9eca56)) !important;
+  -pie-background: linear-gradient(#cae286, #9eca56); /* IE6-9 */
+}
+
+.zenbutton span a,
+.zenbutton span a.jbReadon,
+.zenmore a span,
+input.button,
+button.zenbutton span{
+  color::#678338!!important;
+}
+button.zenbutton span a:hover{
+  color:white!important;
+}
+
+.zenbutton span a:hover,
+.zenbutton input:hover,
+.zenmore a>span:hover,
+.button:hover,
+button.zenbutton:hover,
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover{
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(181,215,110,1);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(181,215,110,1);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.6), 0 0 5px rgba(181,215,110,1);
+  color: #444;
+}

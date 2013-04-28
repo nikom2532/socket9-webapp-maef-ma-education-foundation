@@ -1,0 +1,28 @@
+Here are all the details you should need for the Azure Hosting.
+ 
+Site URL:
+http://maef.azurewebsites.net/
+ 
+Database Name:
+my_site_db421
+ 
+Database User Name:
+joomlauser421
+ 
+Database Password:
+Z1!2]%gy8H2o
+ 
+Joomla Site Administrator:
+admin
+ 
+Joomla Site Administrator Password:
+%mkelW.-t2E_
+ 
+FTP HOST
+ftp://waws-prod-hk1-001.ftp.azurewebsites.windows.net
+ 
+FTP Username
+maef\maef
+ 
+FTP Password
+maef#LaF3

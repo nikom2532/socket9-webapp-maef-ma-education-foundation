@@ -1,0 +1,283 @@
+/*----------------------------------------------------------------
+Template:  JB Corporate
+Version:  Joomla 1.5 / Joomla 2.5
+Zen Grid:   v2.0
+Copyright:  Joomlabamboo
+Created:  April 2012
+---------------------------------------------------*/
+
+/* These styles set the background colour and any other style you want to attach to the rows int he theme.  */
+
+body{
+background: #fff;width: 100%;
+}
+
+.grid_one,.grid_two,.grid_three,.grid_four,.grid_five,.grid_six,.grid_seven,.grid_eight,.grid_nine,.grid_ten,.grid_eleven
+{
+margin-right: 3.8%;
+float: left;
+min-height: 1px
+}
+
+.grid_one
+{
+width: 4.85%
+}
+
+.grid_two
+{
+width: 13.45%
+}
+
+.grid_three
+{
+width: 22.05%
+}
+
+.grid_four
+{
+width: 30.75%
+}
+
+.grid_five
+{
+width: 39.45%
+}
+
+.grid_six
+{
+width: 48%
+}
+
+.grid_seven
+{
+width: 56.75%
+}
+
+.grid_eight
+{
+width: 65.4%
+}
+
+.grid_nine
+{
+width: 74.05%
+}
+
+.grid_ten
+{
+width: 82.7%
+}
+
+.grid_eleven
+{
+width: 91.35%
+}
+
+.grid_twelve,grid_
+{
+width: 100%;
+float: left
+}
+
+.jblast{
+float: right;margin: 0;
+} 
+
+
+.clear {
+clear: both;
+}
+
+/* notices
+-------------------------------------------------------------- */
+
+.notice,.error,.success {
+  margin: 0 0 17px 0; 
+  padding: 0 4px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.notice {
+  background: #FFF6BF; 
+  color: #514721; 
+  border-bottom: 1px solid #FFD324;
+}
+
+.error {
+  background: #FBE3E4; 
+  color: #8a1f11; 
+  border-bottom: 1px solid #FBC2C4;
+}
+
+.success {
+  background: #E6EFC2; 
+  color: #264409; 
+  border-bottom: 1px solid #C6D880;  
+}
+
+/*--- CODE ---*/
+pre, code {
+  overflow-x: auto;height: 200px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #eee;
+  border: 1px solid #ddd;display: block;
+  font-family: monaco, courier, "courier new", monospace;
+  font-size: 11px;
+  margin: 0 0 18px;
+  padding: 9px;
+}
+
+
+/*--- QUOTES ---*/
+blockquote{
+
+  font-size: 2em;
+  font-family: georgia;
+  font-style: italic;
+  margin: 1em 0;
+}
+blockquote b,
+blockquote .source{
+  /* Mark the source up with either a <b> or another element of your choice with a class of source. */
+  display:block;
+  text-indent:0;
+}
+
+
+/* forms
+-------------------------------------------------------------- */
+
+fieldset{
+  padding:10px;
+  border:1px solid #ccc;
+  margin:1.5em 0;
+  max-width: 100%;
+}
+label{
+  display:block;
+  cursor:pointer;
+}
+label:after{
+  content:":";
+}
+label::after{
+  content:":";
+}
+input,
+textarea{
+  font-family:inherit;
+  font-size:1em;
+  line-height:1.5;
+}
+
+
+/*--- LISTS ---*/
+ul,
+ol{
+  margin:0 0 1.5em 20px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul{
+  /* Let’s take care of lists in lists */
+  margin:0 0 0 20px;
+}
+
+/*
+A numbered list is NOT the same as an ordered one.
+Use this class when you want a list to be numbered but it has no order.
+See http://jsfiddle.net/csswizardry/sdrth/
+*/
+ul.numbered{
+  list-style:decimal outside;
+}
+dl{
+  margin-bottom:1.5em;
+}
+dt{
+  font-weight:bold;
+}
+dt:after{
+  content:":";
+}
+dt::after{
+  content:":";
+}
+dd{
+  margin-left:60px;
+}
+
+/*--- QUOTES ---*/
+blockquote{
+  text-indent:-0.4em; /* Hang that punctuation */
+}
+blockquote b,
+blockquote .source{
+  /* Mark the source up with either a <b> or another element of your choice with a class of source. */
+  display:block;
+  text-indent:0;
+}
+
+
+
+/*--- GENERAL ---*/
+q,
+i,
+em,
+cite{
+  font-style:italic;
+  font-weight:inherit;
+}
+b,
+strong{
+  font-weight:bold;
+  font-style:inherit;
+}
+mark{
+  background:#ffc;
+}
+s,
+del{
+  text-decoration:line-through;
+}
+small{
+  font-size:0.75em;
+  line-height:1;
+}
+
+ins  { color: #f00; }
+small, sup, sub  { font-size: 80%; }
+
+abbr, acronym                  { font-size: 85%; text-transform: uppercase; letter-spacing: .1em; }
+
+abbr[title], acronym[title], dfn[title]      { border-bottom: 1px dotted black; cursor: help; }
+sup, sub                    { line-height: 0; }
+sup                        { vertical-align: super; }
+sub                        { vertical-align: sub; }
+
+/* CSS3 Multiple Columns
+-------------------------------------------------------------- */
+.twocolumns {
+-moz-column-count:3; -moz-column-gap:1.5em;-moz-column-rule:1px solid #c4c8cc; -webkit-column-count:3; -webkit-column-gap: 1.5em; -webkit-column-rule: 1px solid #dedede;
+}
+
+
+.threecolumns {
+text-align: justify;
+-moz-column-width: 31%;
+-moz-column-gap: 2%;
+-webkit-column-width: 31%;
+-webkit-column-gap: 2%;
+}
+
+.fourcolumns {
+text-align: justify;
+-moz-column-width: 22%;
+-moz-column-gap: 3%;
+-webkit-column-width: 22%;
+-webkit-column-gap: 3%;
+}

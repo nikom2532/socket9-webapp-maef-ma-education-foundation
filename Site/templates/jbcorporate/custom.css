@@ -1,0 +1,168 @@
+body {
+/* 	color: red;	 */
+	
+}
+div.itemView {
+	border-bottom:none!important;
+}
+hr {
+color: #dedede;
+background-color: #ddd;
+height: 1px;
+border: 0;
+}
+#bannerwrap .container .row .inner #banner .moduletable .jbmoduleBody{
+  float: right;
+  text-align: center;
+  margin-top: 140px;
+  width: 30%;
+  font-weight: bold;
+}
+#bannerwrap {
+	top:360px!important;
+}
+.txt_frontpage .zenbutton span {
+	margin-left:5px;
+	float:none;
+}
+#background {
+	height: 670px!important;
+	background-image: url(../../images/banner-background.png);
+	background-repeat: no-repeat;
+}
+.fullWrap  {
+	margin-top:0px!important;
+}
+@font-face {
+    font-family: 'KorolevBold';
+    src: url('../font/KorolevBold.eot');
+    src: url('../font/KorolevBold.eot?iefix') format('eot'),
+         url('../font/KorolevBold.woff') format('woff'),
+         url('../font/KorolevBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.korolev {
+    font-size: 2.4em!important;
+    font-weight: 500;
+    text-shadow: none;
+    font-family: KorolevBold!important;
+}
+#banner h2 {
+	padding:0 !important;
+	text-shadow: none!important;
+	color: blue;
+}
+
+/* Slideshow
+-----------------------------------------------------------------------------*/
+.zentools.slideshow li {
+margin:0
+}
+
+.zentools.slideshow ul.slidenav li {margin: 0 10px 0 0;}
+
+.slideshowoverlay .allitems,.slideshowoverlayFrame .allitems {
+position:fixed!important;
+bottom:0px;
+background:rgba(0,0,0,.4);
+color:#fff;
+width:100%!important;
+padding:10px 4%;
+}
+
+.slideshowoverlay h2 a,.slideshowoverlayFrame .allitems h2 a {
+color:#fff
+}
+
+.zenitem {
+position:relative
+}
+
+.slideshowoverlayFrame {
+background:#f9f9f9;
+border:1px solid #eee;
+border-radius:4px;
+float:left;
+width:94%;
+padding:20px
+}
+
+.slideshowflat .flex-direction-nav li a {
+top:-45px;
+z-index:11
+}
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (max-width: 1024px) {
+    #background {
+  position:absolute;
+  z-index:1;
+  width:100%;
+  overflow:hidden;
+  top:115px!important;
+  }
+.zenbutton span a, .zenbutton span a.jbReadon, .zenmore a span, input.button, button.zenbutton span {
+	margin-right:65px;
+}  
+  a.jbReadon, span.readon, .zenmore a span.readon {
+	  font-size: 60%;
+  }
+  #bannerwrap {
+	top:370px!important;
+}
+}
+
+@media screen and (max-width: 960px) {
+  .container{width: 760px !important}
+  .allitems.container {width: 100% !important}
+  #nav ul li {padding-left: 0 !important;font-size: 1.1em;line-height: 8;}
+  #logo img { max-width: 90%; }
+  #banner h2 { font-size: 2em; }
+  #navwrap.sticky #nav li {line-height: 3.4em;padding-top: 9px}
+
+  .login form { width:100% !important;}
+  .contact-form { width:100% !important;}
+  .admintable { width:100% !important;}
+  .zeninner{ height: 480px!important;
+}
+.zenbutton span a, .zenbutton span a.jbReadon, .zenmore a span, input.button, button.zenbutton span {
+	margin-right:65px;
+}  
+  a.jbReadon, span.readon, .zenmore a span.readon {
+	  font-size: 60%;
+  }
+  #bannerwrap {
+	top:370px!important;
+} 
+}
+
+@media only screen and (max-width: 520px) {
+  body {overflow-x:hidden}
+  /* Makes all grid positions 100% in width on small browsers */
+  .grid_one,
+  .grid_two,
+  .grid_three,
+  .grid_four,
+  .grid_five,
+  .grid_six,
+  .grid_seven,
+  .grid_eight,
+  .grid_nine,
+  .grid_ten,
+  .grid_eleven,
+  .grid_twelve,
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .zentools.masonry .grid_3
+  {width: 100%;margin-bottom: 30px} 
+  .zeninner{
+   height: 300px!important;
+   }
+}
+
+

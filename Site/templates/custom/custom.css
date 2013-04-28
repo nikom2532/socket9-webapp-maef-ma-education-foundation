@@ -1,0 +1,366 @@
+body {
+/* 	color: red;	 */
+	
+}
+#contentwrap {
+	margin-top: 450px!important;
+}
+div.itemView {
+	border-bottom:none!important;
+}
+hr {
+color: #dedede;
+background-color: #ddd;
+height: 1px;
+border: 0;
+}
+.zenbutton span a{
+	width:-50px!important;
+}
+#bannerwrap .container .row .inner #banner .moduletable .jbmoduleBody{
+  float: right;
+  text-align: center;
+  margin-top: 186px;
+  width: 38%;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#bannerwrap {
+	top:127px!important;
+}
+.txt_frontpage .zenbutton span {
+	margin-left:5px;
+	float:none;
+}
+.txt_frontpage{
+	margin-right:-22px;
+	float:none;
+	margin-top:-17px ;
+}
+.grid_center {
+	margin-left: 0!important;
+	padding: 0!important;	
+}
+
+h1.front_Quote {
+	font-size: 2.6em!important;
+	line-height: 40px!important;
+	text-shadow: -1px -1px 6px rgba(255, 255, 255, 0.92)!important;
+	color: #67952d!important;
+	font-family: arial, helvetica, sans-serif!important;
+	font-weight: bold;
+}
+.txt_frontpage .zenbutton {
+	margin-top: -70px!important;
+}
+
+#background {
+	height: 670px!important;
+	background-image: url(../../images/banner-background.png);
+	background-repeat: no-repeat;
+}
+.fullWrap  {
+	margin-top:0px!important;
+}
+
+@font-face {
+    font-family: 'korolevbold';
+    src: url('korolevbold-webfont.eot');
+    src: url('korolevbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('korolevbold-webfont.woff') format('woff'),
+         url('korolevbold-webfont.ttf') format('truetype'),
+         url('korolevbold-webfont.svg#korolevbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'korolevmedium';
+    src: url('korolev_medium-webfont.eot');
+    src: url('korolev_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('korolev_medium-webfont.woff') format('woff'),
+         url('korolev_medium-webfont.ttf') format('truetype'),
+         url('korolev_medium-webfont.svg#korolevmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#topwrap {
+	margin-top:-10px!important;
+}
+#navwrapper #nav ul {
+	width:620px!important;
+	margin-right:-26px!important;
+}
+.grid_center .grid_twelve .grid_three {
+	margin-right: 3.2%!important;
+	width: 30%!important;
+}
+.grid_center .grid_twelve .grid_three img{
+	width: 80%!important;
+}
+.grid_center .grid_twelve .grid_three a{
+	font-size: 14px!important;
+}
+.grid_center .grid_twelve .grid_three.txtcenter{
+	margin-top: 20px!important;
+}
+
+
+/* Slideshow
+-----------------------------------------------------------------------------*/
+.zentools.slideshow li {
+margin:0
+}
+
+.zentools.slideshow ul.slidenav li {margin: 0 10px 0 0;}
+
+.slideshowoverlay .allitems,.slideshowoverlayFrame .allitems {
+position:fixed!important;
+bottom:0px;
+background:rgba(0,0,0,.4);
+color:#fff;
+width:100%!important;
+padding:10px 4%;
+}
+
+.slideshowoverlay h2 a,.slideshowoverlayFrame .allitems h2 a {
+color:#fff
+}
+
+.zenitem {
+position:relative
+}
+
+.slideshowoverlayFrame {
+background:#f9f9f9;
+border:1px solid #eee;
+border-radius:4px;
+float:left;
+width:94%;
+padding:20px
+}
+
+.slideshowflat .flex-direction-nav li a {
+top:-45px;
+z-index:11
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (max-width: 1024px) {
+	#background {
+		position:absolute;
+		z-index:1;
+		width:100%;
+		overflow:hidden;
+		top:115px!important;
+	}
+	a.jbReadon, span.readon, .zenmore a span.readon {
+	  font-size: 80%!important;
+	}
+	#bannerwrap {
+		top:240px;
+	}
+	.zeninner{
+	   height: 300px!important;
+	 }
+	#jbtabbedArea {
+		margin-top:-32px!important;
+	}
+	h1.front_Quote {
+		margin-top:-72px!important;
+	}
+	.zeninner {
+		height: 327px!important;
+	}
+	#contentwrap {
+		margin-top: 411px!important;
+	}
+	.flexslider .slides img {
+		margin-top:10px!important;
+	}
+	.grid_center .grid_twelve .grid_three {
+		margin-right: 2.8%!important;
+		width: 22%!important;
+	}
+	.grid_center .grid_twelve .grid_three img{
+		width: 60%!important;
+	}
+	.grid_center .grid_twelve .grid_three a{
+		font-size: 14px!important;
+	}
+	
+}
+
+@media screen and (max-width: 760px)  {
+	#jbtabbedArea {
+		margin-top: -72px!important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px)  {
+  .container{width: 760px !important}
+  .allitems.container {width: 100% !important}
+  #nav ul li {padding-left: 0 !important;font-size: 1.1em;line-height: 8;}
+  #logo img { max-width: 90%; }
+  #banner h2 { font-size: 2em; }
+  #navwrap.sticky #nav li {line-height: 3.4em;padding-top: 9px}
+
+  .login form { width:100% !important;}
+  .contact-form { width:100% !important;}
+  .admintable { width:100% !important;}
+  .zeninner{ height: 480px!important;
+}
+.zenbutton span a, .zenbutton span a.jbReadon, .zenmore a span, input.button, button.zenbutton span {
+	margin-right:12px!important;
+}  
+
+  #bannerwrap {
+	top:158px!important;
+}
+a {
+	font-size: 14px;
+} 
+a.jbReadon, span.readon, .zenmore a span.readon{
+	font-size: 80%!important;
+}
+h1.front_Quote {
+	font-size: 1.6em!important;
+	line-height: 30px!important;
+	text-shadow: -1px -1px 6px rgba(255, 255, 255, 0.92)!important;
+	color: #67952d!important;
+	font-family: arial, helvetica, sans-serif!important;
+	font-weight: bold;
+}
+#contentwrap {
+	margin-top: 300px!important;
+}
+#jbtabbedArea {
+	margin-top:-15px!important;
+}
+h1.front_Quote {
+	margin-top:-94px!important;
+}
+#navwrapper #nav ul {
+	width:620px!important;
+}
+.zeninner {
+	height: 320px!important;
+}
+.flexslider .slides img {
+	margin-top:65px!important;
+	margin-left: 150px!important;
+	width: 70%!important;
+	height: 70%!important;
+}
+#navwrapper {
+	margin-right: -200px!important;
+}
+.grid_center .grid_twelve .grid_three {
+	margin-right: 2.8%!important;
+	width: 22%!important;
+}
+.grid_center .grid_twelve .grid_three img{
+	width: 70%!important;
+}
+.grid_center .grid_twelve .grid_three a{
+	font-size: 12px!important;
+}
+}
+
+@media screen and (max-width: 780px) {
+#bannerwrap {
+	display: none!important;
+}
+}
+
+@media only screen and (max-width: 520px) {
+  body {overflow-x:hidden}
+  /* Makes all grid positions 100% in width on small browsers */
+  .grid_one,
+  .grid_two,
+  .grid_three,
+  .grid_four,
+  .grid_five,
+  .grid_six,
+  .grid_seven,
+  .grid_eight,
+  .grid_nine,
+  .grid_ten,
+  .grid_eleven,
+  .grid_twelve,
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .zentools.masonry .grid_3
+  {width: 100%;margin-bottom: 30px} 
+  .zeninner{
+   height: 300px!important;
+   }
+   a.jbReadon, span.readon, .zenmore a span.readon{
+	font-size: 60%!important;
+}
+p, address {
+	font-size: 80%!important;
+}
+.grid_center .grid_twelve .grid_three {
+	margin-left:28px!important;
+	width: 80%!important;
+	float: none!important;
+	text-align: center!important;
+}
+.grid_center .grid_twelve .grid_three img{
+	width: 80%!important;
+}
+.grid_center .grid_twelve .grid_three a{
+	font-size: 14px!important;
+}
+  #bannerwrap {
+	display: none!important;
+}
+#jbtabbedArea {
+	margin-top:-73px!important;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+
+p, address {
+	font-size: 100%;
+}
+a.jbReadon, span.readon, .zenmore a span.readon{
+	font-size: 80%!important;
+}
+p, address {
+	font-size: 90%!important;
+}
+  #abovemain .grid_3,
+  #abovemain .grid_4,
+  #belowmain .grid_3,
+  #belowmain .grid_4 {
+    width: 100%;
+  }  
+  
+  #zenpanel {width: 90% !important} {
+}
+.zeninner {
+	height: 430px!important;
+}
+h1, .componentheading {
+	margin-bottom:100px;
+}
+.grid_center .grid_twelve .grid_three {
+	margin-right: 3.2%!important;
+	width: 30%!important;
+}
+.grid_center .grid_twelve .grid_three img{
+	width: 70%!important;
+}
+.grid_center .grid_twelve .grid_three a{
+	font-size: 12px!important;
+}
+}
+
+

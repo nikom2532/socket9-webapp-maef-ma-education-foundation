@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.1" method="upgrade">
+    <name>jTweet</name>
+    <author>Joomla Bamboo</author>
+    <creationDate>October 2009</creationDate>
+    <copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>design@joomlabamboo.com</authorEmail>
+    <authorUrl>www.joomlabamboo.com</authorUrl>
+    <version>1.8.1</version>
+    <description>jTweets is a port of the Sea of Clouds jQuery script called Tweet.</description>
+    <files>
+        <filename module="mod_jTweet">mod_jTweet.php</filename>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>tmpl</folder>
+        <folder>elements</folder>
+		<folder>fields</folder>
+        <filename>index.html</filename>
+    </files>
+ 	<languages>
+        <language tag="es-ES">language/es-ES.mod_jTweet.ini</language>
+		<language tag="en-GB">language/en-GB.mod_jTweet.ini</language>
+    </languages>
+	<config>
+        <fields name="params" addpath="/modules/mod_jTweet/fields">
+            <fieldset name="settings" label="MOD_JTWEET_SETTINGS" addfieldpath="/modules/mod_jTweet/fields">
+				<field name="type" type="list" default="0" label="Display your tweets or query?" description="If set to displaying your tweets the module will output all of your recent tweets, otherwise if set to query it will display all recent tweets according to the query term.">
+					<option value="tweets">Your tweets</option>
+					<option value="query">Twitter query</option>
+					<option value="multi">Multi-user tweets</option>
+				</field>
+				<field name="userName" type="text" default="" label="Twitter Username(s)" description="Your twitter username or usernames seperated by ',' " />
+				<field name="query" type="text" default="" label="Twitter Query" description="Search term for recent tweets" />
+				<field name="count" type="text" default="5" label="Tweet Count" description="Number of tweets to display" />
+            </fieldset>
+            <fieldset name="scripts" label="MOD_JTWEET_SCRIPTS_AND_CSS_FILES">
+				<field name="" type="info" label="MOD_JTWEET_LOAD_INFO" />
+				<field name="scripts" type="radio" default="article" label="CSS and Javascript" description="This option can be used to remove all javascript and css from being loaded by the microblog module. If in doubt leave this option enabled. If you are using the Zen Grid framework version2 then the scripts and css files will be loaded via the framework. If your site uses caching then the relevant files will be loaded into the body of your site.">
+			            <option value="1">Enable CSS and Javascript</option>
+			            <option value="0">Disable CSS and Javascript</option>
+			        </field>
+            </fieldset>
+            <fieldset name="displaySettings" label="Layout and Display Settings">
+				<field name="twitterBird" type="list" default="bird1" label="Twitter Icon" description="Select the twitter bird icon to display beside the first tweet in the twitter module. Please note that if this is set to anything other than none then you must set the avatar size to 0.">
+					<option value="bird1">Bird1</option>
+					<option value="bird2">Bird2</option>
+					<option value="bird3">Bird3</option>
+					<option value="bird4">Bird4</option>
+					<option value="bird5">Bird5</option>
+					<option value="none">No Icon</option>
+				</field>
+				<field name="avatar" type="list" default="no" label="Display Avatar?" description="Display the avatar before your tweets.">
+					<option value="yes">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<field name="avatarSize" type="text" default="48" label="Avatar Size" description="The size of your twitter avatar" />
+				<field name="twitterName" type="list" default="yes" label="Display Twitter Name?" description="Display the twitter name for the tweet?">
+					<option value="yes">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<!-- field name="twitterAction" type="text" default="tweeted" label="Twitter Name Action Text" description="Action text following the twitter name." /> -->
+				<field name="tweetSource" type="list" default="yes" label="Display Source?" description="Display the source of the tweet?">
+					<option value="yes">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<!--  <field name="sourcePre" type="text" default="from" label="Tweet Source Preceeding Text" description="Text preceeding the Tweet source." /> -->
+				<field name="joinText" type="list" default="auto" label="Display linking text?" description="Display the intro text nominated below to preface your tweets.">
+					<option value="auto">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<field name="noReplies" type="list" default="no" label="Display Replies?" description="Display direct replies to other users. Experimental feature that may result in reduced tweets being displayed.">
+					<option value="no">MOD_JTWEET_YES</option>
+					<option value="yes">MOD_JTWEET_NO</option>
+				</field>
+				<field name="tweetTemplate" type="list" default="1" label="Choose a Tweet Template" description="Pick the layout of your tweets as they areto be displayed.">
+					<option value="1">avatar + twitter name + join + text + date + tweet source</option>
+					<option value="2">avatar + twitter name + date + tweet source + join + text</option>
+					<option value="3">avatar + join + text + twitter name + date + tweet source</option>
+				</field>
+				<!--  <field name="autoDefault" type="text" default="I said" label="Non verb text" description="auto text for non verb: i said 'bullocks'" />
+				<field name="autoEd" type="text" default="I" label="Past tense text" description="auto text for past tense: i 'surfed'" />
+				<field name="autoIng" type="text" default="I am" label="Present tense Text" description="auto text for past tense: i 'surfed'" />
+				<field name="autoReply" type="text" default="I replied to" label="Text for reply" description="auto tense for replies: 'i replied to' @someone 'with'" />
+				<field name="loadingText" type="text" default="Loading Tweets ..." label="Loading Text" description="Loading text, displayed while tweets load" />
+				 -->
+            </fieldset>
+            <fieldset name="popupSettings" label="Popup Settings">
+				<field name="popup" type="list" default="yes" label="Display Popup User Info?" description="Display the user information in a popup?">
+					<option value="yes">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<field name="moreInfo" type="text" default="more info...!" label="More Info Text" description="Enter the text you would like displayed for more information in a popup." />
+				<field name="popupIntro" type="text" default="I am on Twitter!" label="Popup Intro Text" description="Enter the intro text you would like displayed in the popup." />
+				<field name="follow" type="list" default="yes" label="Display follow text?" description="Display the follow text and icon?">
+					<option value="yes">MOD_JTWEET_YES</option>
+					<option value="no">MOD_JTWEET_NO</option>
+				</field>
+				<field name="followText" type="text" default="Follow me on Twitter" label="Follow me text" description="Enter the text you would like displayed in the follow me area of the module." />
+				<field name="followStyle" type="list" default="auto" label="Follow Icon style" description="Select the style you want to apply to the follow text, link and icon.">
+					<option value="none">None</option>
+					<option value="sticker">Sticker</option>
+					<option value="icon">Icon</option>
+				</field>
+				<field name="followPosition" type="list" default="right" label="Follow Text Position" description="Select whether to float the follow text to the left or the right of the module.">
+					<option value="left">MOD_JTWEET_LEFT</option>
+					<option value="right">MOD_JTWEET_RIGHT</option>
+				</field>
+            </fieldset>
+            <fieldset name="general" label="MOD_JTWEET_GENERAL_SETTINGS">
+	            <field name="cache" type="list" default="0" label="MOD_JTWEET_CACHING" description="MOD_JTWEET_CACHING_DESC">
+	                <option value="1">MOD_JTWEET_USE_GLOBAL</option>
+	                <option value="0">MOD_JTWEET_NO_CACHING</option>
+	            </field>
+	            <field name="cache_time" type="text" default="900" label="MOD_JTWEET_CASHE_TIME" description="MOD_JTWEET_CASHE_TIME_DESC" />
+	            <field name="moduleclass_sfx" type="text" default="" label="MOD_JTWEET_CLASS_SUFFIX" description="PARAMMODULECLASSSUFFIX" />
+            </fieldset>
+        </fields>
+    </config>
+    <params addpath="/modules/mod_jTweet/elements">
+        <param name="type" type="list" default="0" label="Display your tweets or query?" description="If set to displaying your tweets the module will output all of your recent tweets, otherwise if set to query it will display all recent tweets according to the query term.">
+            <option value="tweets">Your tweets</option>
+            <option value="query">Twitter query</option>
+            <option value="multi">Multi-user tweets</option>
+        </param>
+        <param name="userName" type="text" default="" label="Twitter Username(s)" description="Your twitter username or usernames seperated by ',' " />
+        <param name="query" type="text" default="" label="Twitter Query" description="Search term for recent tweets" />
+        <param name="count" type="text" default="5" label="Tweet Count" description="Number of tweets to display" />
+         <param type="panel" panel="panel" title="jTweet Scripts and CSS Files" />
+	        <param name="scripts" type="radio" default="article" label="CSS and Javascript" description="This option can be used to remove all javascript and css from being loaded by the microblog module. If in doubt leave this option enabled. If you are using the Zen Grid framework version2 then the scripts and css files will be loaded via the framework. If your site uses caching then the relevant files will be loaded into the body of your site.">
+		            <option value="1">Enable CSS and Javascript</option>
+		            <option value="0">Disable CSS and Javascript</option>
+		        </param>
+        <param type="panel" panel="panel" title="Layout and Display Settings" />
+        <param name="twitterBird" type="list" default="bird1" label="Twitter Icon" description="Select the twitter bird icon to display beside the first tweet in the twitter module. Please note that if this is set to anything other than none then you must set the avatar size to 0.">
+            <option value="bird1">Bird1</option>
+            <option value="bird2">Bird2</option>
+            <option value="bird3">Bird3</option>
+            <option value="bird4">Bird4</option>
+            <option value="bird5">Bird5</option>
+            <option value="none">No Icon</option>
+        </param>
+        <param name="avatar" type="list" default="no" label="Display Avatar?" description="Display the avatar before your tweets.">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="avatarSize" type="text" default="48" label="Avatar Size" description="The size of your twitter avatar" />
+        <param name="twitterName" type="list" default="yes" label="Display Twitter Name?" description="Display the twitter name for the tweet?">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <!-- param name="twitterAction" type="text" default="tweeted" label="Twitter Name Action Text" description="Action text following the twitter name." /> -->
+        <param name="tweetSource" type="list" default="yes" label="Display Source?" description="Display the source of the tweet?">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <!--  <param name="sourcePre" type="text" default="from" label="Tweet Source Preceeding Text" description="Text preceeding the Tweet source." /> -->
+        <param name="joinText" type="list" default="auto" label="Display linking text?" description="Display the intro text nominated below to preface your tweets.">
+            <option value="auto">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="noReplies" type="list" default="no" label="Display Replies?" description="Display direct replies to other users. Experimental feature that may result in reduced tweets being displayed.">
+            <option value="no">Yes</option>
+            <option value="yes">No</option>
+        </param>
+        <param name="tweetTemplate" type="list" default="1" label="Choose a Tweet Template" description="Pick the layout of your tweets as they areto be displayed.">
+            <option value="1">avatar + twitter name + join + text + date + tweet source</option>
+            <option value="2">avatar + twitter name + date + tweet source + join + text</option>
+            <option value="3">avatar + join + text + twitter name + date + tweet source</option>
+        </param>
+        <!--  <param name="autoDefault" type="text" default="I said" label="Non verb text" description="auto text for non verb: i said 'bullocks'" />
+        <param name="autoEd" type="text" default="I" label="Past tense text" description="auto text for past tense: i 'surfed'" />
+        <param name="autoIng" type="text" default="I am" label="Present tense Text" description="auto text for past tense: i 'surfed'" />
+        <param name="autoReply" type="text" default="I replied to" label="Text for reply" description="auto tense for replies: 'i replied to' @someone 'with'" />
+        <param name="loadingText" type="text" default="Loading Tweets ..." label="Loading Text" description="Loading text, displayed while tweets load" />
+         -->
+        <param type="panel" panel="panel" title="Popup Settings" />
+        <param name="popup" type="list" default="yes" label="Display Popup User Info?" description="Display the user information in a popup?">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="moreInfo" type="text" default="more info...!" label="More Info Text" description="Enter the text you would like displayed for more information in a popup." />
+        <param name="popupIntro" type="text" default="I am on Twitter!" label="Popup Intro Text" description="Enter the intro text you would like displayed in the popup." />
+        <param name="follow" type="list" default="yes" label="Display follow text?" description="Display the follow text and icon?">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="followText" type="text" default="Follow me on Twitter" label="Follow me text" description="Enter the text you would like displayed in the follow me area of the module." />
+        <param name="followStyle" type="list" default="auto" label="Follow Icon style" description="Select the style you want to apply to the follow text, link and icon.">
+            <option value="none">None</option>
+            <option value="sticker">Sticker</option>
+            <option value="icon">Icon</option>
+        </param>
+        <param name="followPosition" type="list" default="right" label="Follow Text Position" description="Select whether to float the follow text to the left or the right of the module.">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </param>
+        <param type="panel" panel="panel" title="General Module Settings" />
+        <param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </param>
+        <param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</install>

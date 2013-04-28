@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+	<name>myMART3</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>March 2012</creationDate>
+	<author>Paul Candido</author>
+	<authorEmail>paul@fairpoint.com.au</authorEmail>
+	<authorUrl>www.mymart3.com.au</authorUrl>
+	<copyright>Copyright 2012 Fairpoint Pty Ltd</copyright>
+	<license></license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Component to manage/merge myMART3 users with the Joomla user base</description>
+ 
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> 
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>mymart3.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+	
+	<media destination="com_mymart3" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>includes</folder>
+	</media>
+ 
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_mymart3/images/mm3-16x16.png">COM_MYMART3_MENU</menu>
+		<submenu>
+			<menu link="option=com_mymart3" view="mymart3" img="../media/com_mymart3/images/mm3-16x16.png"
+				alt="myMART3 Users">COM_MYMART3_USERS_MENU</menu>
+			<menu link="option=com_mymart3&amp;view=groups" view="groups" img="class:groups"
+				alt="myMART3 Groups">COM_MYMART3_GROUPS_MENU</menu>
+	  </submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>mymart3.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_mymart3.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_mymart3.sys.ini</language>
+		</languages>
+	</administration>
+ 
+</extension>

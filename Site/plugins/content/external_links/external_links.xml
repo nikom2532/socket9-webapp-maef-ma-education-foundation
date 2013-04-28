@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="plugin" group="content" method="upgrade">
+	<name>Content - External Link</name>
+	<author>JoniJnm</author>
+	<creationDate>Feb 2012</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>www.jonijnm.es</authorUrl>
+	<version>1.7</version>
+	<description>External Links</description>
+	<files>
+		<filename plugin="external_links">external_links.php</filename>
+		<folder>external_links</folder>
+	</files>
+	<params>
+		<param type="list" name="redirect" default="url" label="Redirect to...">
+			<option value="url">Url</option>
+			<option value="article">Article</option>
+		</param>
+		<param type="text" size="63" name="url" default="plugins/content/external_links/frameset.php?url=%s" label="Redirect to a Url" description="Redirect the URLs to a custom link. %s is the url" />
+		<param type="text" name="article_id" default="" label="Redirect to article ID" description="You can redirect the links to an article, where say something lik 'You will visit other page....'" />
+		<param type="text" size="63" name="add" default="Visit the page" label="Text to add in article" description="Text to add in the end of the article. %s is the url" />
+		<param type="text" name="no_link" default="no_link=1" label="No link param" description="If the url has 'no_link=1' the link wont be converted" />
+		<param type="list" name="target" default="0" label="Add target='_blank'" description="Links will be opened in a new tab">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="list" name="rel" default="1" label="Add rel='nofollow'" description="Search engines won't analyse the link">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="list" name="onlyreg" default="0" label="Only registered users can look external links">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param type="text" size="63" name="regtext" default="Only registered users can look links" label="Text for guest" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="list" name="redirect" default="url" label="Redirect to...">
+					<option value="url">Url</option>
+					<option value="article">Article</option>
+				</field>
+				<field type="text" size="63" name="url" default="plugins/content/external_links/external_links/frameset.php?url=%s" label="Redirect to a Url" description="Redirect the URLs to a custom link. %s is the url" />
+				<field type="text" name="article_id" default="" label="Redirect to article ID" description="You can redirect the links to an article, where say something lik 'You will visit other page....'" />
+				<field type="text" size="63" name="add" default="Visit the page" label="Text to add in article" description="Text to add in the end of the article. %s is the url" />
+				<field type="text" name="no_link" default="no_link=1" label="No link param" description="If the url has 'no_link=1' the link wont be converted" />
+				<field type="list" name="target" default="0" label="Add target='_blank'" description="Links will be opened in a new tab">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="list" name="rel" default="1" label="Add rel='nowfollow'" description="Search engines won't analyse the link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="list" name="onlyreg" default="0" label="Only registered users can look external links">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="text" size="63" name="regtext" default="Only registered users can look links" label="Text for guest" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

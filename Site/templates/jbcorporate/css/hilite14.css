@@ -1,0 +1,192 @@
+/*------------------------------------------------------------------
+		Template:	JB Responsive
+		Version:	Joomla 1.5
+		Zen Grid: 	v2.0
+		Copyright:	Joomlabamboo
+		Created:	October 2011
+		---------------------------------------------------*/
+
+		/* First Colour
+		---------------------------------------------------*/
+		/* Main Link Colour
+		---------------------------------------------------*/
+		a,
+		.sidebar ul li.active li.active a,
+		.sidebar ul li.active li.active li.active a,
+		#topwrapper ul.menu li.active a
+		{color: #E84768}
+
+
+		/* Palletes
+		---------------------------------------------------*/
+
+
+		.primary1 {background:#E84768;border-bottom:8px solid #ae354e;color: #fff;}
+		.primary2 {background:#ee758e;border-bottom: 8px solid #E84768;color: #742434}
+		.primary2 h3 span{color: #742434}
+		
+		.secondary1 {background:#42464A;border-bottom: 8px solid #323538;color: #fff;}
+		.secondary2 {background:#727578;border-bottom: 8px solid #42464A;color: #212325}
+		.secondary2 h3 span{color: #212325}
+		
+
+
+		/* First Background Hovers
+		---------------------------------------------------*/
+		div.k2CommentsForm form input#submitCommentButton,
+		#subnav ul li.active a,
+		span.featured,
+		span.content_vote .button,
+		ul#filters li a.active,
+		ul.zentabs li a.active,
+		ul.zentabs li.active a,
+		.sidebar ul li.active a,
+		span.jb_author,
+		#zenkit ul.itemTags li a:hover,
+		#zenkit .tagsBlock ul li a:hover
+		{
+			background:#E84768 !important;color: #fff
+		} 
+		
+		blockquote {
+			background: #fff !important;border: 1px solid #ddd;border-left: 8px solid #eb627e
+		}
+		
+		
+		/* Link Hover and nav hover colour
+		---------------------------------------------------*/
+		a:hover,
+		#topwrapper ul.menu li a:hover,
+		#nav ul li a:hover,
+		#nav ul li.active a:hover,
+		#nav ul li span.mainlevel span:hover,
+		#nav ul li.active li.active li a:hover,
+		.moduletable-superfish a:hover,
+		.moduletable-superfish ul li a:hover,
+		.moduletable-superfish ul li.active li.active li a:hover {color: #eb627e}
+
+
+
+		/* Second Colour
+		---------------------------------------------------*/
+		/* Main background colour, readon and siebar active
+		---------------------------------------------------*/
+		body,a.jbReadon,span.readon
+		{background:#42464A} 
+		
+		
+		ul.itemTags li a,
+		#zenkit .tagsBlock ul li a {
+		color: #fff;border-radius:4px;background:#727578
+		}
+
+
+		/* Active menu 
+		---------------------------------------------------*/		
+		#nav ul li.active a,
+		#nav ul li.active span.separator, 
+		#nav ul li.active li.active span.mainlevel span,
+		#nav ul li.active li.active a,
+		#nav ul li.active li.active span.separator,
+		#nav ul li.active li.active li.active a,
+		#nav ul li.active li.active li.active li.active a,
+		#nav ul li.active li.active li.active span.separator, 
+		.moduletable-superfish ul li.active a,
+		.moduletable-superfish ul li.active span.separator,
+		.moduletable-superfish ul li.active li.active a,
+		.moduletable-superfish ul li.active li.active span.separator,
+		.moduletable-superfish ul li.active li.active li.active a,
+		.moduletable-superfish ul li.active li.active li.active span.separator
+		{color: #E84768} 
+
+
+
+		/* Main Menu Colour
+		---------------------------------------------------*/
+		#nav ul li.active a,
+		#nav ul li.active span.mainlevel span,
+		#nav ul li.active span.separator span {
+		border-top: 8px solid #E84768
+		}
+
+
+		/* Other styles for sidebar main link
+		---------------------------------------------------*/
+		.sidebar ul li.active a{border-bottom: 1px solid #ae354e}
+
+
+
+
+		/* Sidebar link Resets
+		---------------------------------------------------*/
+		.sidebar ul li.active li.active li a {
+		color: #999;
+		}
+
+
+		/* Image overlaying the background position
+		---------------------------------------------------*/
+		#backgroundoverlay {
+		background: url(../images/bg/thinoverlay.png) repeat-x left bottom;
+		}
+
+
+
+		/* Top Colour border beneath the overlay
+		---------------------------------------------------*/
+		#contentwrap {
+		background: url(../images/border/hilite14border.png) repeat-x left 0
+		}
+
+		#contentwrap.nobg {
+		background-position: left 2px
+		}
+
+
+
+		/* Resets on items that have a #fff colour
+		---------------------------------------------------*/
+		ul.jbtabs li.active a:hover,
+		#jbSplitMenuAbove ul li#current a,
+		a#zenpanelopen,
+		div.jbReadmore a,
+		ul.jbtabs li a:hover,
+		#subnav ul li.active a,
+		.sidebar ul li.active a,
+		#jbSplitMenuAbove ul li#current a,
+		a.jbReadon,
+		span.featured,
+		a.k2ReadMore,
+		#subnav ul li.active a,
+		a.k2ReadMore:hover,
+		#footer ul li a,
+		#topwrap ul li a,
+		#headerwrap ul li a,
+		a.jbReadon,span.readon,
+		#contentwrap ul.zentabs li a.active,
+		#contentwrap ul.zentabs li.active a,
+		#togglemnu ul li a:hover
+		{
+		color: #fff;
+		}
+		
+
+
+		/* Nav link and span color
+		---------------------------------------------------*/
+		#nav ul li a,
+		#nav span.separator,
+		#nav ul li span.mainlevel span,
+		#nav ul li.active li a,
+		#nav ul li.active li span.separator,
+		#nav ul li.active li.active li a,
+		#nav ul li.active li.active li.active li a,
+		.moduletable-superfish  ul li a,
+		.moduletable-superfish span.seaparator,
+		.moduletable-superfish ul li.active li a,
+		.moduletable-superfish ul li.active li span.separator,
+		.moduletable-superfish  ul li.active li.active li a,
+		.moduletable-superfish ul li.active li.active li.active li a
+		{color: #fff}
+		
+		

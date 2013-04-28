@@ -1,0 +1,4 @@
+/* Put your ie8 specific rules here.  */
+img {
+width: auto\9; /* ie8 */
+}

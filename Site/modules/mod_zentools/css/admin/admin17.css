@@ -1,0 +1,298 @@
+/* @override http://localhost:8888/25/zentools/modules/mod_zentools/css/admin/admin17.css */
+
+/*------------------------------------------------------------------
+Module:	Zentools
+Version:	Joomla 1.5 / Joomla 1.7
+Copyright:	Joomlabamboo
+Created:	December 2011
+---------------------------------------------------*/
+label#jform_params_layout-lbl,label#jform_params_itemorder-lbl,input#jform_params_itemorder,label#jform_params_items-lbl,label#jform_params_useditems-lbl,#jform_params_useditems,label#jform_params_unuseditems-lbl,#jform_params_unuseditems
+{
+	display:none !important;
+}
+
+.zentools,.zentools fieldset
+{
+	background:#f9f9f9 !important;
+}
+
+.zentools li
+{
+	list-style-type:none;
+	clear:both;
+	line-height:2em;
+	padding:12px 0;
+}
+
+.zentools label
+{
+	width:35%;
+	float:left;
+	margin-left:20px;
+	margin-right:3%;
+}
+
+.zentools li textarea,.zentools li select{
+	float:left;
+	width:45% !important;
+}
+
+select#jform_params_itemid,select#jform_params_catid
+{
+	height:200px;
+}
+
+fieldset.panelform label
+{
+	float:left !important;
+	clear:none !important;
+	margin:0 10px 0 0 !important;
+}
+
+.radio {
+margin: 0;padding: 0 !important;
+}
+
+fieldset.panelform input#jform_params_count {
+padding: 5px
+}
+
+fieldset#jform_params_contentSource,fieldset#jform_params_link
+{
+	float:right;
+	width:60%;
+	margin-top:-37px;
+}
+
+fieldset#jform_params_link
+{
+	margin:4px 0 0;
+}
+
+fieldset#jform_params_contentSource label,fieldset#jform_params_link label
+{
+	margin:4px 0 0 !important;
+	padding:0;
+}
+
+label#jform_params_link-lbl
+{
+	clear:both !important;
+	float:left;
+	padding-top:10px;
+}
+
+select#jform_params_layout
+{
+	width:100%;
+	margin:20px 0;
+}
+
+label#jform_params_contentSource-lbl
+{
+	width:100%;
+	padding:40px 0 20px;
+}
+
+fieldset#jform_params_altlink,label#jform_params_altlink-lbl,label#jform_params_categoryFilter-lbl,#jform_params_categoryFilter {
+padding: 20px 0 !important;
+}
+label#jform_params_altlink-lbl {
+width: 35%;
+}
+
+h3.zentools
+{
+	cursor:pointer;text-shadow: 1px 0 0 #fff;
+}
+
+.zenheading h4.zentools {
+padding: 2px 2% ;margin: 10px 0 0 4%;background: #fff !important;border-radius:4px;width: 88%;border:1px solid #dedede;color: #666;text-shadow: 1px 0 0 #fff;
+}
+
+#items
+{
+	position:relative;
+	left:0;
+	top:40px;
+	width:90%;
+	margin-top:10px;
+	padding-bottom:130px;
+	clear:both;
+}
+
+#items ul
+{
+	list-style-type:none;
+	background:#fafafa;
+	border:1px solid #ddd;
+	width:100%;
+	margin:8px 0 30px;
+}
+
+#items li
+{
+	font-size:1.2em;
+	height:18px;
+	background:#fff url(../../images/admin/gradient.png) repeat-x left bottom;
+	border-radius:3px;
+	border:1px solid #ddd;
+	list-style-type:none;
+	cursor:move;
+	text-align:center !important;
+	margin:0 3px 3px !important;
+	padding:4px !important;
+}
+
+#items li.ui-state-highlight,#sortable2 li.ui-state-highlight
+{
+	background:#FCFBDD;
+}
+
+#zenmessage p
+{
+	height:10px;
+	overflow:hidden;
+	background:url(../../images/admin/loading.gif) no-repeat left center;
+	position:absolute;
+	margin-top:40px;
+	width:80%;
+	display:none;
+	color:#999;
+	padding:10px 10px 10px 40px;
+}
+
+#instructions,.zennotice
+{
+	background:#FFF6BF url(../../images/admin/gear_24.png) no-repeat 10px center;
+	color:#514721;
+	border:1px solid #FFD324;
+	width:60%;
+	cursor:pointer;
+	margin:10px;
+	padding:10px 50px
+}
+
+#header
+{
+	top:0;
+}
+
+#footer
+{
+	bottom:0;
+	clear:both;
+}
+
+#right
+{
+	right:0;
+}
+
+#help
+{
+	position:absolute;
+	top:50px;
+	right:0;
+}
+
+#help a
+{
+	background:url(../../images/admin/gear_24.png) no-repeat left center;
+	padding:10px 0 10px 25px;
+}
+
+ul#sortable2
+{
+	background:none;
+	border:0;
+	position:absolute;
+	width:100%;
+	right:0;
+	left:0;
+}
+
+ul#sortable2 li
+{
+	border-radius:3px;
+	width:60px;
+	background:#eee;
+	float:left;
+	color:#333;
+	font-size:90%;
+	height:12px;
+	display:inline;
+	padding-left:0;
+	text-align:center;
+	margin:0 10px 10px 0;
+}
+
+#items li.disabled
+{
+	border:0;
+	background:0;
+	font-size:110%;
+	font-weight:700;
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	color:#333;
+}
+
+.pane-sliders .panel h3,#toggleAll
+{
+	background:#f5f5f5 url(../../images/admin/gradient.png) repeat-x left bottom !important;
+	border-bottom:1px solid #D6DADD;
+	border-top:1px solid #D6DADD;
+	margin:0;
+	padding:10px;
+}
+
+#toggleAll {
+padding: 4px;border-radius:4px;border: 1px solid #ddd;cursor: pointer;
+}
+
+.pane-sliders .panel
+{
+	margin-bottom:0 !important;
+	border-width:0 1px !important;
+	padding:0;
+}
+
+#menu-pane td,.zentools td
+{
+	background:#fff !important;
+	border:0 !important;
+	text-align:left;
+	padding:4px 0 4px 20px !important;
+}
+
+table.paramlist td.paramlist_description
+{
+	background:none !important;
+}
+
+label#paramsitems-lbl
+{
+	display:none;
+}
+
+.pane-sliders .title
+{
+	color:#333 !important;
+	margin:0;
+	padding:2px;
+}
+
+
+
+ul.adminformlist,td.paramlist_value
+{
+	position:relative;
+}
+
+
+
+#jform_params_altlink-lbl.hasTip {
+
+}

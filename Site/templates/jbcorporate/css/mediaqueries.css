@@ -1,0 +1,216 @@
+/**
+ * @package    Joomla Bamboo Zen Grid Framework
+ * @Type        Core CSS
+ * @version    v2
+ * @author    Joomlabamboo http://www.joomlabamboo.com
+ * @copyright   Copyright (C) 2007 - 2010 Joomla Bamboo
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+ 
+/* Rules for Media queries. If you want to create your own media query file just create a file called mediaqueroes.css in your css file.
+-----------------------------------------------------------------------------*/
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (max-width: 1024px) {
+    #background {
+  position:absolute;
+  z-index:1;
+  width:100%;
+  overflow:hidden;
+  top:94px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container{width: 760px !important}
+  .allitems.container {width: 100% !important}
+  #nav ul li {padding-left: 0 !important;font-size: 1.1em;line-height: 8;}
+  #logo img { max-width: 90%; }
+  #banner h2 { font-size: 2em; }
+  #navwrap.sticky #nav li {line-height: 3.4em;padding-top: 9px}
+
+  .login form { width:100% !important;}
+  .contact-form { width:100% !important;}
+  .admintable { width:100% !important;}
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 800px) {  
+  span.createDate,span.k2Author,.k2Category {margin-right: 8px}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  
+  /* Fix for advert positions with three modules published at low resolutions */
+  #abovemain .grid_3,
+  #abovemain .grid_4,
+  #belowmain .grid_3,
+  #belowmain .grid_4 {
+    width: 100%;
+  }  
+  
+  #zenpanel {width: 90% !important}
+}
+
+/* Fix for tabs dropping onto two lines on small screens */
+@media only screen and (min-width: 480px) and (max-width: 790px) {
+    ul.jbtabs li a,ul.jbtabs li.active a {padding: 12px 20px;font-size: 0.9em;line-height: 1.9em}
+    #bannerwrap .container {padding-bottom: 0}
+}
+
+@media only screen and (max-width: 790px) {
+  .container{width: 100% !important}
+  .moduletable.mobilehide{display: none}
+  .fullwrap.togglemenu #menuwrap,.fullwrap.selectmenu #menuwrap {display: none}
+  #navwrap .row {width: 94%}
+  .contentrow {margin-top: 0}
+  #mainwrap .container {background: none}
+  #mainwrap {margin-top: 10px}
+
+  /* Togglemenu */
+  #togglemenu {display: block;position: relative;z-index: 90}
+  .fullwrap.togglemenu #navwrap .inner,
+  .fullwrap.togglemenu #navwrap .row,
+  .fullwrap.togglemenu #navwrap .container {border: 0;padding: 0}
+  
+  #menuwrap.hide {display: none}
+  #contentwrap {margin-top: 0px !important;background-position: left 0}
+  #contentwrap .contentrow {margin-top:0}
+  #background {display: none}
+  #logo.grid_five {width: 94%}
+  #tabwrap {margin: 0}
+  
+  #zenfilters.zentabs li {margin: 0 !important}
+  ul.jbtabs { height: 60px; }
+  ul.jbtabs li a,ul.jbtabs li.active a { display: block; height: 44px; padding: 0; text-align: center; width: 100%; }
+  ul.jbtabs li {width: auto;padding: 14px 20px 0}
+  ul.jbtabs li img {margin: 0}
+  ul.jbtabs li span {width: 90%}
+  ul.jbtabs li span.zenlast {display: none}
+  ul.jbtabs li span.grid_three { margin-right: 0; }
+  
+  ul.jbtabs li.active{
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;height: 45px;
+  }
+  
+  ul.jbtabs li.jbtab1.active {border-left: 0}
+
+  /*  Resets widths set in the zentools module */
+  .zentools.masonry li.grid_2,.zentools.masonry li.grid_six,.zentools.masonry li.grid_12,.zentools.masonry li.grid_one,.zentools.masonry li.grid_6,.zentools.masonry li.grid_two,.zentools.masonry li.grid_4,.zentools.masonry li.grid_three,.zentools.masonry li.grid_3,.isotope li.grid_3,.zentools.masonry li.grid_four,.isotope li.grid_four {
+width:100%
+}
+
+  #togglemenu {padding-bottom: 1%}
+  #togglemenu ul li {/*border-bottom: 1px solid #111;*/border-top: 1px solid #222}
+  #togglemenu ul li li {padding-left: 15px;margin: 0}
+  #togglemenutrigger {font-size: 90%;background: url(../images/menu/togglemenu.png) no-repeat left center;padding-left: 20px; margin-bottom:1%;}
+  #zenpaneltrigger {height: 40px}
+  #topwrap {background:#101011}
+  
+  /* CSS for the mobile menu */
+  #mobilemenu {display: inline;position: relative;z-index: 10;top: -30px;width: 100%;margin-left: 20%;}
+  #mobilemenu select{width: 60%}
+  .fullwrap.togglemenu #menuwrap,.fullwrap.selectmenu #menuwrap {display: none}
+  #navwrap.sticky #mobilemenu select {margin-top: 10px;}
+  #navwrap.sticky {height: 120px}
+  body.sticky #zenpaneltrigger {position: fixed;height: 36px;}
+
+ 
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 520px) {
+  body {overflow-x:hidden}
+  /* Makes all grid positions 100% in width on small browsers */
+  .grid_one,
+  .grid_two,
+  .grid_three,
+  .grid_four,
+  .grid_five,
+  .grid_six,
+  .grid_seven,
+  .grid_eight,
+  .grid_nine,
+  .grid_ten,
+  .grid_eleven,
+  .grid_twelve,
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .zentools.masonry .grid_3
+  {width: 100%;margin-bottom: 30px}   
+  
+
+  span.grid_three {margin: 0}
+
+  img { max-width: 97%; }
+  h2 { margin: 0; }
+  #navwrap { /*height: 100px;*/ height:130px; }
+  
+  #mobilemenu {margin-top: 30px;}
+  #mobilemenu {display: inline;position: relative;z-index: 10;top: -0px;width: 100%;margin-left: 18%;}
+
+  /* Resets the push and pull for source ordered content */
+  .onecols_pull,
+  .twocols_pull,
+  .threecols_pull,
+  .fourcols_pull,
+  .fivecols_pull,
+  .sixcols_pull,
+  .sevencols_pull,
+  .eightcols_pull,
+  .ninecols_pull,
+  .tencols_pull,
+  .elevencols_pull,
+  .twelvecols_pull,
+  .onecols_push,
+  .twocols_push,
+  .threecols_push,
+  .fourcols_push,
+  .fivecols_push,
+  .sixcols_push,
+  .sevencols_push,
+  .eightcols_push,
+  .ninecols_push,
+  .tencols_push,
+  .elevencols_push,
+  .twelvecols_push
+  {left: 0}
+  
+  /* Microblog */
+  .mbWrap{width: 47% !important}
+  .mbColImage {float: left;margin-right: 20px}
+  .mbWrap.last {float: left}
+  
+  /* General Container */
+
+  #tabwrap .container {padding: 0}
+  #nav ul li a {padding-left: 0;padding-right: 0}
+  
+  /* Tabs */
+
+  #zenpanel {width: 90% !important;height: auto !important}
+  .zenitem .grid_twelve{margin-bottom: 0}
+  #bannerwrap .container {padding: 0}
+  #nav {margin-bottom: 0}
+  .jb_left45,.jb_right45 {
+    width: 100% !important;
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  
+
+  #zenpanel {position: absolute !important}
+}
+
+
+#togglemenucontent a, .sidebar ul li.active li.active a, .sidebar ul li.active li.active li.active a, #topwrapper ul.menu li.active a { color:#FFFFFF;}
+
+  .login form { width:100%;}
+  .contact-form { width:100%; font-size:20px!important;}
+  .admintable { width:80%;}
+.admintable .key { width:20%;}

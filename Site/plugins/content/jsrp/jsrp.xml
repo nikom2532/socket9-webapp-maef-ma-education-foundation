@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_JSRP</name>
+    <author>Nikita Zonov aka Joomalungma</author>
+    <creationDate>Jule 2011</creationDate>
+    <copyright>Copyright (C) 2005 - 2011 Open Source Matters. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>joomalungma@gmail.com</authorEmail>
+    <authorUrl>joomalungma.com</authorUrl>
+    <version>1.3.2</version>
+    <description>PLG_CONTENT_JSRP_XML_DESCRIPTION</description>
+
+    <files>
+        <filename plugin="jsrp">jsrp.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="addjs" type="radio" default="0" label="JSRP_ADDJS_LABEL" description="JSRP_ADDJS_DESC">
+                    <option value="1">JSRP_YES</option>
+                    <option value="0">JSRP_NO</option>
+                </field>
+                <field name="targetBlank" type="radio" default="0" label="JSRP_TARGET_BLANK_LABEL" description="JSRP_TARGET_BLANK_DESC">
+                    <option value="1">JSRP_YES</option>
+                    <option value="0">JSRP_NO</option>
+                </field>
+		    </fieldset>
+		</fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="jsrp"><![CDATA[http://joomalungma.com/updatexml/jsrp-update.xml]]></server>
+    </updateservers>
+</extension>
